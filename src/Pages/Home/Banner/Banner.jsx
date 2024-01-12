@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,65 +23,82 @@ const Banner = () => {
     },
   };
 
-  const [allItems, setAllItems] = useState([]);
-  const [findItem, setFindItem] = useState([]);
+  const [allPlaces, setallPlaces] = useState([]);
+  const [findPlace, setfindPlace] = useState([]);
 
   useEffect(() => {
     fetch("places.json")
       .then((res) => res.json())
       .then((data) => {
-        setAllItems(data);
+        setallPlaces(data);
         setActiveIndex(data.length > 0 ? data[0].id : 1);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   useEffect(() => {
-    // console.log("allItems:", allItems);
-    const item = allItems.filter((items) => items.id === activeIndex);
-    setFindItem(item);
-  }, [activeIndex, allItems]);
-  console.log(findItem);
+    // console.log("allPlaces:", allPlaces);
+    const place = allPlaces.filter((places) => places.id === activeIndex);
+    setfindPlace(place);
+  }, [activeIndex, allPlaces]);
+  //   console.log(findPlace);
 
   return (
     <div className="relative h-screen">
-      <div className="absolute top-0 left-0 right-0 bottom-0">
+      <div className="relative h-screen">
         <img
           className="h-full w-full object-cover"
-          src={findItem[0]?.imageURL}
+          src={findPlace[0]?.imageURL}
           alt=""
         />
+        <div className=" absolute  top-0 left-0 flex items-center  bg-gradient-to-r from-[rgba(0,0,0,.9)] to-[rgba(0,0,0,0.1)] h-full  w-full pl-[8%]">
+          <div>
+            <p className="text-7xl text-orange-500 font-semibold ">
+              {findPlace[0]?.title}
+            </p>
+            <p className="text-base text-white w-2/5 my-[2%]">
+              {findPlace[0]?.description}
+            </p>
+            <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
+              Explore
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="absolute top-[48%] right-[5%] px-6  w-auto overflow-hidden">
+      <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
         <Slider
           {...settings}
           ref={sliderRef}
           className="cursor-pointer  w-[700px]"
         >
-          {allItems.map((item) => (
-            <div key={item?.id} className="">
+          {allPlaces.map((place) => (
+            <div key={place?.id} className="">
               <img
                 className={`${
-                  item?.id === activeIndex ? "border-4 border-orange-400" : ""
+                  place?.id === activeIndex ? "border-4 border-orange-400" : ""
                 } !w-[160px] h-[230px] object-cover  rounded-lg`}
-                src={item?.imageURL}
+                src={place?.imageURL}
                 alt=""
               />
             </div>
           ))}
         </Slider>
-        <div className="flex justify-start items-center gap-6 my-5">
+        <div className="flex justify-start places-center gap-6 my-5">
           <button
             onClick={() => sliderRef.current.slickPrev()}
-            className="previous bg-orange-500 font-bold px-5 py-2 text-base rounded text-white"
+            className="previous "
           >
-            &lt;
+            <p className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
+              <AiOutlineLeft></AiOutlineLeft>
+            </p>
           </button>
           <button
             onClick={() => sliderRef.current.slickNext()}
-            className="next bg-orange-500 font-bold px-5 py-2 text-base rounded text-white"
+            className="next "
           >
-            &gt;
+            <p className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
+              <AiOutlineRight></AiOutlineRight>
+            </p>
           </button>
         </div>
       </div>
