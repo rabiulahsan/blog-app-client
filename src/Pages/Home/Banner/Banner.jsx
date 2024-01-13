@@ -3,9 +3,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import "./Banner.css";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    const x = e.pageX - e.currentTarget.offsetLeft;
+    const y = e.pageY - e.currentTarget.offsetTop;
+
+    setCoordinates({ x, y });
+  };
+  const buttonStyles = {
+    "--before-top": `${coordinates.y}px`,
+    "--before-left": `${coordinates.x}px`,
+  };
 
   const sliderRef = useRef(null);
 
@@ -59,7 +72,15 @@ const Banner = () => {
             <p className="text-base text-white w-2/5 my-[2%]">
               {findPlace[0]?.description}
             </p>
-            <button className="orange-btn ">Explore</button>
+
+            {/* button with hover effect  */}
+            <button
+              onMouseMove={(e) => handleMouseMove(e)}
+              style={buttonStyles}
+              className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 before:bg-white hover:text-orange-600"
+            >
+              <span className="relative z-10">Explorer</span>
+            </button>
           </div>
         </div>
       </div>
