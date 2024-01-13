@@ -59,9 +59,7 @@ const Banner = () => {
             <p className="text-base text-white w-2/5 my-[2%]">
               {findPlace[0]?.description}
             </p>
-            <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
-              Explore
-            </button>
+            <button className="orange-btn ">Explore</button>
           </div>
         </div>
       </div>
@@ -88,7 +86,7 @@ const Banner = () => {
             onClick={() => sliderRef.current.slickPrev()}
             className="previous "
           >
-            <p className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
+            <p className="orange-btn ">
               <AiOutlineLeft></AiOutlineLeft>
             </p>
           </button>
@@ -96,7 +94,7 @@ const Banner = () => {
             onClick={() => sliderRef.current.slickNext()}
             className="next "
           >
-            <p className="bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white">
+            <p className="orange-btn ">
               <AiOutlineRight></AiOutlineRight>
             </p>
           </button>

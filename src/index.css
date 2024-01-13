@@ -5,3 +5,16 @@
 .active{
     @apply text-orange-600  font-bold
 }
+
+.navlink-hover{
+    @apply cursor-pointer font-semibold mx-2 px-2  hover:text-orange-300
+}
+
+.orange-btn{
+
+  @apply  bg-orange-500 hover:bg-orange-600 px-6 py-3 text-xl rounded text-white
+}
+
+.orange-small-btn{
+    @apply  bg-orange-500 hover:bg-orange-600 px-5 py-2 text-base rounded text-white
+}
