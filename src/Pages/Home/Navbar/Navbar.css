@@ -1,0 +1,18 @@
+li {
+    position: relative;
+}
+
+ li span::after{
+    content: '';
+    background: #f78409;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ li span:hover::after {
+    
+    width: 100%;
+}

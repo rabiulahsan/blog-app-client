@@ -7,7 +7,7 @@
 }
 
 .navlink-hover{
-    @apply cursor-pointer font-semibold mx-2 px-2  hover:text-orange-300
+    @apply cursor-pointer font-semibold mx-2 px-2  hover:text-orange-400
 }
 
 .orange-btn{
