@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="sticky top-0 left-0 z-50">
-      <div className="flex justify-between items-center w-full absolute top-0 left-0  bg-[rgba(0,0,0,0.3)] py-3 px-[5%] text-white">
+      <div className="flex justify-between items-center w-full absolute top-0 left-0  bg-[rgba(0,0,0,0.6)] py-3 px-[5%] text-white">
         <Link to="/">
           <p className="text-3xl text-orange-600 font-extrabold">Explorer</p>
         </Link>
