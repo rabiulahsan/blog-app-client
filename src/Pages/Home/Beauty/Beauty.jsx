@@ -5,7 +5,7 @@ const Beauty = () => {
   const countrySection = UseCountries();
 
   return (
-    <div className="my-[3%]">
+    <div className="my-[5%]">
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Find the Natures Beauty"}></SectionTitle>
 
