@@ -1,15 +1,16 @@
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
-import UseAllBlogs from "../../../Hooks/UseAllBlogs/UseAllBlogs";
+import UseCountries from "../../../Hooks/UseCountries/UseCountries";
 
 const Beauty = () => {
-  const allBlogs = UseAllBlogs();
-
-  console.log(allBlogs);
+  const countrySection = UseCountries();
 
   return (
     <div className="my-[3%]">
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Find the Natures Beauty"}></SectionTitle>
+
+      {/* this is for specific country card  */}
+      {countrySection}
     </div>
   );
 };

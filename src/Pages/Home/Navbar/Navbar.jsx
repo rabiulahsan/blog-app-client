@@ -18,7 +18,7 @@ const Navbar = () => {
             </li>
             <li className="navlink-hover">
               <span>
-                <ActiveLink to="/countries">Country</ActiveLink>
+                <ActiveLink to="/countries">Countries</ActiveLink>
               </span>
             </li>
             <li className="navlink-hover">
