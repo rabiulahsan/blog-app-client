@@ -1,3 +1,4 @@
+import PageTitle from "../../../Components/PageTitle/PageTitle";
 import Footer from "../../../Shared/Footer/Footer";
 import Trending from "../../../Shared/Trending/Trending";
 import Banner from "../Banner/Banner";
@@ -13,6 +14,9 @@ const Home = () => {
   const scaleX = useSpring(scrollYProgress);
   return (
     <div>
+      {/* this is for title of the  page  */}
+      <PageTitle pageDescription="Get Close to Nature"></PageTitle>
+
       <Navbar></Navbar>
       {/* it is for on scroll progress bar  */}
       <motion.div

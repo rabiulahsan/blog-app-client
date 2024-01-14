@@ -1,3 +1,4 @@
+import PageTitle from "../../Components/PageTitle/PageTitle";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCategories from "../../Hooks/UseCategories/UseCategories";
 import CardForPage from "../../Shared/CardForPage/CardForPage";
@@ -14,6 +15,8 @@ const CategoryPage = () => {
   };
   return (
     <div>
+      {/* this is for title of the  page  */}
+      <PageTitle pageDescription="Categories"></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Find your Tour destination"></SectionTitle>

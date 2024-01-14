@@ -3,6 +3,7 @@ import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 const BlogPage = () => {
   //getting all blogs data
@@ -14,6 +15,8 @@ const BlogPage = () => {
   };
   return (
     <div>
+      {/* this is for title of the  page  */}
+      <PageTitle pageDescription="Blogs"></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Know about your Destination"></SectionTitle>

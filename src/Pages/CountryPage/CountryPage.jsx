@@ -1,3 +1,4 @@
+import PageTitle from "../../Components/PageTitle/PageTitle";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCountries from "../../Hooks/UseCountries/UseCountries";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
@@ -13,6 +14,8 @@ const CountryPage = () => {
   };
   return (
     <div>
+      {/* this is for title of the  page  */}
+      <PageTitle pageDescription="Countries"></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Countries You would love to visit"></SectionTitle>
