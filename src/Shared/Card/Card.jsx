@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Card.css";
 const Card = ({ place }) => {
-  console.log(place);
+  // console.log(place);
   return (
     <div className=" relative h-[280px]  main  cursor-pointer my-5">
       <img

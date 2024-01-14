@@ -33,9 +33,9 @@ const UseCategories = () => {
     },
     {
       id: 6,
-      name: "Waterfall",
+      name: "Beach",
       image:
-        "https://media.cntraveler.com/photos/542d98cc425f183f61bf7912/master/pass/reykjavik-iceland-2048-1536.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/110876334_20231009155645.jpg",
     },
     {
       id: 7,
