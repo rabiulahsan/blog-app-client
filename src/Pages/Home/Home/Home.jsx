@@ -2,6 +2,7 @@ import Footer from "../../../Shared/Footer/Footer";
 import Trending from "../../../Shared/Trending/Trending";
 import Banner from "../Banner/Banner";
 import Beauty from "../Beauty/Beauty";
+import CategorySection from "../CategorySection/CategorySection";
 import Navbar from "../Navbar/Navbar";
 
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -19,6 +20,7 @@ const Home = () => {
       ></motion.div>
       <Banner></Banner>
       <Beauty></Beauty>
+      <CategorySection></CategorySection>
       <Trending></Trending>
       <Footer></Footer>
     </div>

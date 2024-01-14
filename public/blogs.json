@@ -6,7 +6,7 @@
     "location": "Bangladesh",
     "image": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/10/e2/f8/43/longest-sea-beach-in.jpg",
     "description": "Cox's Bazar is a town on the southeast coast of Bangladesh. It is famous for its long sandy beach, which stretches for 120 kilometers. The beach is lined with palm trees and is a popular destination for tourists. Cox's Bazar is also home to the Himchori Waterfall, which is located in the nearby hills. The waterfall is surrounded by lush green forests and is a popular spot for picnics and hiking. Cox's Bazar is a must-visit destination for anyone who loves natural beauty, history, and culture.",
-    "category": "Tourist Destination",
+    "category": "Beach",
     "country": "Bangladesh",
     "trending": false
 },
@@ -17,9 +17,20 @@
     "location": "India",
     "image": "https://www.thoughtco.com/thmb/mvzDYqXzP4T_D7JfMTsWm5GgDZA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunrise-at-taj-mahal--agra--uttar-pradash--india-583682538-5b91840bc9e77c0050bdc67b.jpg",
     "description": "The Taj Mahal is a white marble mausoleum located in Agra, India. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. The Taj Mahal is considered one of the most beautiful buildings in the world and is a UNESCO World Heritage Site. The monument is surrounded by beautiful gardens and is a popular destination for tourists. The Taj Mahal is a must-visit destination for anyone who loves history, architecture, and culture.",
-    "category": "Tourist Destination",
+    "category": "Monument",
     "country": "India",
     "trending": false
+},
+{
+    "writer": "John Doe",
+    "email": "johndoe@example.com",
+    "placeName": "lake tahoe",
+    "location": "California, USA",
+    "image": "https://www.travelandleisure.com/thmb/PtkzpF17oxHfxuTbsnUx7oJY20A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lake-tahoe-california-USLAKES0920-59df9ea26eaf4bbba7620eb604f0af3c.jpg",
+    "description": "Lake Tahoe is a large freshwater lake in the Sierra Nevada Mountains, straddling the border of California and Nevada. It’s known for its beaches and ski resorts. On the southwest shore, Emerald Bay State Park contains the 1929 Nordic-style mansion Vikingsholm. Along the lake’s northeast side, Lake Tahoe Nevada State Park includes Sand Harbor Beach and Spooner Lake, a gateway to the long-distance Tahoe Rim Trail. ",
+    "category": "Lake",
+    "country": "USA",
+    "trending": true
 },
 {
     "writer": "John Doe",
@@ -28,7 +39,7 @@
     "location": "Arizona, USA",
     "image": "https://media.cntraveler.com/photos/594034815fff7e434a15efcf/master/pass/GettyImages-172750000.jpg",
     "description": "The Grand Canyon is a steep-sided canyon located in the state of Arizona, USA. It is carved by the Colorado River and is over 277 miles long. The Grand Canyon is one of the most popular tourist destinations in the world and attracts millions of visitors every year. The canyon is home to many unique plants and animals and is a popular spot for hiking, camping, and rafting. The Grand Canyon is a must-visit destination for anyone who loves natural beauty, adventure, and outdoor activities.",
-    "category": "Tourist Destination",
+    "category": "Canyon",
     "country": "USA",
     "trending": true
 },
@@ -40,7 +51,7 @@
     "location": "Ontario, Canada",
     "image": "https://spencerdurrant.com/wp-content/uploads/2022/02/niagara_1.jpg",
     "description": "Niagara Falls is a group of three waterfalls located on the Niagara River, which forms the border between the United States and Canada. The falls are located in the province of Ontario, Canada. Niagara Falls is one of the most popular tourist destinations in the world and attracts millions of visitors every year. The falls are surrounded by beautiful parks and are a popular spot for hiking, camping, and picnics. Niagara Falls is a must-visit destination for anyone who loves natural beauty, adventure, and outdoor activities.",
-    "category": "Tourist Destination",
+    "category": "Waterfall",
     "country": "Canada",
     "trending": true
 },
@@ -51,7 +62,7 @@
     "location": "Bangladesh",
     "image": "https://i.natgeofe.com/n/a50f7239-ff6d-4874-9448-25d94d8d1c80/sundarbans-bangladesh_16x9.jpg?w=1200",
     "description": "The Sundarbans is a mangrove forest located in the delta region of the Ganges, Brahmaputra, and Meghna rivers. It is located in the Khulna and Satkhira districts of Bangladesh and the Indian state of West Bengal. The Sundarbans is a UNESCO World Heritage Site and is home to the Bengal tiger. The forest is also home to many unique plants and animals and is a popular spot for birdwatching and wildlife photography. The Sundarbans is a must-visit destination for anyone who loves natural beauty, adventure, and wildlife.",
-    "category": "Tourist Destination",
+    "category": "Forest",
     "country":"Bangladesh",
     "trending":false
 },
@@ -88,6 +99,17 @@
     "image": "https://i.natgeofe.com/n/65a0930b-9efd-40c4-8b6b-fa7fd4f05140/92508_3x2.jpg",
     "description": "Great Smoky Mountains National Park is a national park located in the southeastern United States, straddling the border between Tennessee and North Carolina. The park is known for its stunning views of the Appalachian Mountains, its diverse wildlife, and its rich cultural history. It is the most visited national park in the United States and is a must-see destination for anyone visiting Tennessee.",
     "category": "National park",
+    "country": "USA",
+    "trending": true
+  },
+  {
+    "writer": "Jane Smith",
+    "email": "janesmith@example.com",
+    "placeName": "Zion National Park",
+    "location": "Utah, USA",
+    "image": "https://media.cntraveler.com/photos/5963fa9a7fb62c4aeab0b25c/master/pass/hikes-zion-angels-landing-CEBP0W.jpg",
+    "description": "Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike. ",
+    "category": "Hike",
     "country": "USA",
     "trending": true
   },
@@ -437,7 +459,7 @@
               "location": "Chittagong Hill Tracts, Bangladesh",
               "image": "https://isshh.com/wp-content/uploads/2015/01/Rangamati.jpg",
               "description": "Rangamati is a town located in the Chittagong Hill Tracts of Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The town is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Rangamati is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster.",
-              "category":"City",
+              "category":"Village",
               "country":"Bangladesh",
               "trending":false
             },
@@ -461,7 +483,7 @@
                   "location": "Sylhet, Bangladesh",
                   "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/fd/37/e9/bisnakandi.jpg?w=1200&h=1200&s=1",
                   "description": "Bisanakandi is a village located in the Sylhet division of Bangladesh. It is known for its stunning natural beauty, including crystal-clear waters, lush greenery, and vibrant wildlife. The village is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Bisanakandi is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The village is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "City",
+                  "category": "Village",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -472,7 +494,7 @@
                   "location": "Bangladesh",
                   "image": "https://www.bangladeshtravelandtours.com/wp-content/uploads/2023/04/30.jpg",
                   "description": "Bandarban is a district located in the southeastern part of Bangladesh. It is known for its stunning natural beauty, including lush green hills, crystal-clear streams, and vibrant wildlife. The district is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Bandarban is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The district is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "City",
+                  "category": "Village",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -548,7 +570,7 @@
                   "location": "Appenzell Innerrhoden, Switzerland",
                   "image": "https://peakvisor.com/img/news/Appenzell-Innerrhoden-Santis-in-front.jpg",
                   "description": "Appenzell District is a district of the canton of Appenzell Innerrhoden in Switzerland. It has a population of 5,793 (as of December 2020 [^1^][25]). The area of Appenzell is 16.88 km² (7 sq mi) [^1^][25]. The district of Appenzell consists of a part of the village Appenzell, as well as Rinkenbach, Kau and Meistersrüte [^1^][25].",
-                  "category": "city",
+                  "category": "Village",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -570,7 +592,7 @@
                   "location": "Obwalden, Switzerland",
                   "image": "https://static.toiimg.com/thumb/57667447.cms?resizemode=75&width=1200&height=900",
                   "description": "Engelberg is a village resort and a municipality in the canton of Obwalden in Switzerland. Alongside the central village of Engelberg, the municipality encompasses additional settlements, including Grafenort, Oberberg and Schwand [^4^][15]. Engelberg is a mountain resort in Central Switzerland. In the Middle Ages, the area garnered recognition for its Benedictine monastery, known as Engelberg Abbey. As time progressed, particularly from the 19th century onwards, Engelberg became a well-known mountain resort [^5^][17].",
-                  "category": "City",
+                  "category": "Village",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -581,7 +603,7 @@
                   "location": "Bern, Switzerland",
                   "image": "https://images.squarespace-cdn.com/content/v1/5c4645722714e56a73cc0554/1606946237872-1TH4KP8VK091G3K45BNM/Thun+Switzerland+Travel.jpg",
                   "description": "Interlaken is a town in the Bern canton of central Switzerland. It lies along the Aare River, in the Bernese Highlands. Its name is derived from its position on the flat plain (Bödeli), 1,864 feet (568 m) above sea level, between Lakes Brienz to the east and Thun to the west [^6^][22]. Interlaken is an important and well-known tourist destination in the Bernese Oberland region of the Swiss Alps, and the main transport gateway to the mountains and lakes of that region [^7^][21].",
-                  "category": "City",
+                  "category": "Village",
                   "country": "Switzerland",
                   "trending": false
                 },
