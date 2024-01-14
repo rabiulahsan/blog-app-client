@@ -1,7 +1,7 @@
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCategories from "../../Hooks/UseCategories/UseCategories";
+import CardForPage from "../../Shared/CardForPage/CardForPage";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
-import CategoryCard from "../Home/CategorySection/CategoryCard";
 import Navbar from "../Home/Navbar/Navbar";
 
 const CategoryPage = () => {
@@ -19,7 +19,7 @@ const CategoryPage = () => {
       <SectionTitle heading="Find your Tour destination"></SectionTitle>
       <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
         {categories.map((category) => (
-          <CategoryCard key={category?.id} details={category}></CategoryCard>
+          <CardForPage key={category?.id} details={category}></CardForPage>
         ))}
       </div>
     </div>
