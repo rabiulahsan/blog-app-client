@@ -13,7 +13,7 @@ const Trending = () => {
       <SectionTitle heading={"Trending Places"}></SectionTitle>
 
       {/* this is for specific place card  */}
-      <div className="grid gap-x-20 gap-y-12 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+      <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
         {trendingPlaces.map((place) => (
           <Card key={place.index} place={place}></Card>
         ))}
