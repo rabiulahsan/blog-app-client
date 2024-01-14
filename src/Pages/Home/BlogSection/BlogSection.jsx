@@ -1,6 +1,6 @@
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import UseAllBlogs from "../../../Hooks/UseAllBlogs/UseAllBlogs";
-import Card from "../../../Shared/Card/Card";
+import BlogsCard from "../../../Shared/BlogsCard/BlogsCard";
 
 const BlogSection = () => {
   const [allBlogs] = UseAllBlogs();
@@ -15,7 +15,7 @@ const BlogSection = () => {
       {/* this is for specific place card  */}
       <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
         {allBlogs.slice(0, 6).map((place) => (
-          <Card key={place?.index} place={place}></Card>
+          <BlogsCard key={place.index} place={place}></BlogsCard>
         ))}
       </div>
     </div>
