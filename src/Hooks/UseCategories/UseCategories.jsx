@@ -1,5 +1,3 @@
-import CategoryCard from "../../Pages/Home/CategorySection/CategoryCard";
-
 const UseCategories = () => {
   const categories = [
     {
@@ -74,13 +72,7 @@ const UseCategories = () => {
         "https://i.insider.com/5a25b4ef3339b009268b45d3?width=1000&format=jpeg&auto=webp",
     },
   ];
-  return (
-    <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
-      {categories.map((category) => (
-        <CategoryCard key={category?.id} category={category}></CategoryCard>
-      ))}
-    </div>
-  );
+  return [categories];
 };
 
 export default UseCategories;

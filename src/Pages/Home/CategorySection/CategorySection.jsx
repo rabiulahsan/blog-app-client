@@ -1,15 +1,25 @@
+import { Link } from "react-router-dom";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import UseCategories from "../../../Hooks/UseCategories/UseCategories";
+import CategoryCard from "./CategoryCard";
 
 const CategorySection = () => {
-  const categorySectionCard = UseCategories();
+  //getiing all categories
+  const [categories] = UseCategories();
   return (
-    <div className="my-[5%]">
+    <div className="my-[5%]  relative">
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Categories"}></SectionTitle>
 
       {/* this is for specific category card  */}
-      {categorySectionCard}
+      <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+        {categories.slice(0, 7).map((category) => (
+          <CategoryCard key={category?.id} category={category}></CategoryCard>
+        ))}
+      </div>
+      <button className="orange-small-btn absolute right-[10%] bottom-[20px]">
+        <Link>All Categories</Link>
+      </button>
     </div>
   );
 };
