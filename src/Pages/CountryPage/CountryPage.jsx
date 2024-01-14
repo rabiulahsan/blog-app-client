@@ -16,7 +16,7 @@ const CountryPage = () => {
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Countries You would love to visit"></SectionTitle>
-      {countrySection}
+      <div className="mb-[5%]">{countrySection}</div>
     </div>
   );
 };
