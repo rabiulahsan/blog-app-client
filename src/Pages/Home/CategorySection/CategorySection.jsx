@@ -14,11 +14,11 @@ const CategorySection = () => {
       {/* this is for specific category card  */}
       <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
         {categories.slice(0, 7).map((category) => (
-          <CategoryCard key={category?.id} category={category}></CategoryCard>
+          <CategoryCard key={category?.id} details={category}></CategoryCard>
         ))}
       </div>
       <button className="orange-small-btn absolute right-[10%] bottom-[20px]">
-        <Link>All Categories</Link>
+        <Link to="/categories">All Categories</Link>
       </button>
     </div>
   );

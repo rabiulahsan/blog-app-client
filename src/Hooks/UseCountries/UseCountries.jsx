@@ -1,4 +1,4 @@
-import CountryCard from "../../Pages/Home/Beauty/CountryCard";
+import CategoryCard from "../../Pages/Home/CategorySection/CategoryCard";
 
 const UseCountries = () => {
   const countries = [
@@ -54,7 +54,7 @@ const UseCountries = () => {
   return (
     <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
       {countries.map((country) => (
-        <CountryCard key={country?.id} country={country}></CountryCard>
+        <CategoryCard key={country?.id} details={country}></CategoryCard>
       ))}
     </div>
   );
