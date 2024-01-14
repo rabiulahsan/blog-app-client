@@ -13,7 +13,7 @@ const Navbar = () => {
           <ul className="flex text-lg font-semibold">
             <li className="navlink-hover">
               <span>
-                <ActiveLink to="/">Blogs</ActiveLink>
+                <ActiveLink to="/blogs">Blogs</ActiveLink>
               </span>
             </li>
             <li className="navlink-hover">
