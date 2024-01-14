@@ -23,7 +23,7 @@ const BlogPage = () => {
       <SectionTitle heading="Know about your Destination"></SectionTitle>
       <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
         {/* this id for skeleton */}
-        {isLoading && <SkeletonCard number={8}></SkeletonCard>}
+        {isLoading && <SkeletonCard number={16}></SkeletonCard>}
         {allBlogs.map((place) => (
           <BlogsCard key={place.index} place={place}></BlogsCard>
         ))}
