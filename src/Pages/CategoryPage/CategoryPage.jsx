@@ -17,7 +17,7 @@ const CategoryPage = () => {
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Find your Tour destination"></SectionTitle>
-      <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+      <div className="grid gap-16 grid-cols-1 lg:grid-cols-4 px-[10%]  mb-[5%]">
         {categories.map((category) => (
           <CardForPage key={category?.id} details={category}></CardForPage>
         ))}

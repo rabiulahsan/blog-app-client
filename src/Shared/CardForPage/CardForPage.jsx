@@ -6,7 +6,7 @@ const CardForPage = ({ details }) => {
   const { image, name } = details;
 
   return (
-    <div className=" relative h-[280px]  main  cursor-pointer my-5">
+    <div className=" relative h-[260px]  main  cursor-pointer my-5">
       <img
         className="h-full w-full object-cover  rounded-lg mb-3"
         src={image}

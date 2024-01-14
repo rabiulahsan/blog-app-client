@@ -12,7 +12,7 @@ const CategorySection = () => {
       <SectionTitle heading={"Categories"}></SectionTitle>
 
       {/* this is for specific category card  */}
-      <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+      <div className="grid gap-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
         {categories.slice(0, 7).map((category) => (
           <CategoryCard key={category?.id} details={category}></CategoryCard>
         ))}

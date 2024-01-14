@@ -1,4 +1,4 @@
-import CategoryCard from "../../Pages/Home/CategorySection/CategoryCard";
+import CardForPage from "../../Shared/CardForPage/CardForPage";
 
 const UseCountries = () => {
   const countries = [
@@ -52,9 +52,9 @@ const UseCountries = () => {
     },
   ];
   return (
-    <div className="grid gap-12 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+    <div className="grid gap-x-16 gap-y-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
       {countries.map((country) => (
-        <CategoryCard key={country?.id} details={country}></CategoryCard>
+        <CardForPage key={country?.id} details={country}></CardForPage>
       ))}
     </div>
   );
