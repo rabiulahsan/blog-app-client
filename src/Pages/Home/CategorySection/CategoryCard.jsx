@@ -2,7 +2,7 @@
 import "./CategoryCard.css";
 
 const CategoryCard = ({ details }) => {
-  console.log(details);
+  // console.log(details);
   return (
     <div className=" relative h-[220px]  main  cursor-pointer mb-5">
       <img

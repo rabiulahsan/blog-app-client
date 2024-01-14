@@ -2,6 +2,7 @@ import Footer from "../../../Shared/Footer/Footer";
 import Trending from "../../../Shared/Trending/Trending";
 import Banner from "../Banner/Banner";
 import Beauty from "../Beauty/Beauty";
+import BlogSection from "../BlogSection/BlogSection";
 import CategorySection from "../CategorySection/CategorySection";
 import Navbar from "../Navbar/Navbar";
 
@@ -20,6 +21,7 @@ const Home = () => {
       ></motion.div>
       <Banner></Banner>
       <Beauty></Beauty>
+      <BlogSection></BlogSection>
       <CategorySection></CategorySection>
       <Trending></Trending>
       <Footer></Footer>

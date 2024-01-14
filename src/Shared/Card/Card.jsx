@@ -11,15 +11,15 @@ const Card = ({ place }) => {
       />
       <p className="text-center text-gray-700 text-2xl font-bold">
         {place?.placeName}
+        <p className="text-gray-500 text-center text-sm">
+          {place?.description.slice(0, 100) + "..."}
+        </p>
       </p>
 
       <div className="card-hover overlay ">
         <div className=" px-8">
           <p className=" text-2xl text-orange-500 font-bold text-center mb-3">
             {place?.location}
-          </p>
-          <p className="text-white text-center text-sm">
-            {place?.description.slice(0, 100) + "..."}
           </p>
         </div>
       </div>
