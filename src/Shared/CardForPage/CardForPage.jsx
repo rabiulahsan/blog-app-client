@@ -2,7 +2,7 @@
 import "./CardForPage.css";
 
 const CardForPage = ({ details }) => {
-  console.log(details);
+  // console.log(details);
   const { image, name } = details;
 
   return (
