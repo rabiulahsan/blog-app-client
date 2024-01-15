@@ -12,7 +12,7 @@ const CategoryPage = () => {
   const details = {
     image:
       "https://images.unsplash.com/photo-1622779536320-bb5f5b501a06?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZGl2ZXMlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D",
-    name: "Categories",
+    title: "Categories",
   };
   return (
     <div>

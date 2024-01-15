@@ -5,7 +5,7 @@ const PageBanner = ({ details }) => {
     <div className="w-full h-[360px] relative mb-[5%]">
       <img className="w-full h-full object-cover" src={details?.image} alt="" />
       <div className="flex justify-center items-center absolute top-0 left-0 right-0 h-full w-full  bg-[rgba(0,0,0,0.6)]">
-        <p className="text-5xl text-orange-600 font-bold">{details?.name}</p>
+        <p className="text-5xl text-orange-600 font-bold">{details?.title}</p>
       </div>
     </div>
   );

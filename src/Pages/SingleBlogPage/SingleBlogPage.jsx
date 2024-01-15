@@ -16,7 +16,7 @@ const SingleBlogPage = () => {
   //create object for pagebanner section
   const details = {
     image,
-    name: placeName,
+    title: placeName,
   };
   return (
     <div>

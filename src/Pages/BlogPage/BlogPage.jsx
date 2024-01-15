@@ -13,7 +13,7 @@ const BlogPage = () => {
 
   const details = {
     image: "https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg",
-    name: "Blogs",
+    title: "Blogs",
   };
   return (
     <div className="mb-[5%]">
