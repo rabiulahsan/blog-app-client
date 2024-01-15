@@ -1,5 +1,5 @@
 import PageTitle from "../../../Components/PageTitle/PageTitle";
-import Footer from "../../../Shared/Footer/Footer";
+// import Footer from "../../../Shared/Footer/Footer";
 import Trending from "../../../Shared/Trending/Trending";
 import Banner from "../Banner/Banner";
 import Beauty from "../Beauty/Beauty";
@@ -28,7 +28,7 @@ const Home = () => {
       <BlogSection></BlogSection>
       <CategorySection></CategorySection>
       <Trending></Trending>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

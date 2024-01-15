@@ -12,7 +12,7 @@ const Trending = () => {
   // console.log(trendingPlaces);
 
   return (
-    <div className="my-[5%]">
+    <div className="mt-[5%] mb-[8%]">
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Trending Places"}></SectionTitle>
 
