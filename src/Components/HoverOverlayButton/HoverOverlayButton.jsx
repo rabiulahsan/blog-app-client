@@ -20,7 +20,7 @@ const HoverOverlayButton = ({ btnName }) => {
     "--before-top": `${coordinates.y}px`,
     "--before-left": `${coordinates.x}px`,
   };
-  console.log(buttonStyles);
+  // console.log(buttonStyles);
 
   return (
     <button

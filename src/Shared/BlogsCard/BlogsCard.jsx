@@ -2,7 +2,7 @@ import HoverOverlayButton from "../../Components/HoverOverlayButton/HoverOverlay
 
 /* eslint-disable react/prop-types */
 const BlogsCard = ({ place }) => {
-  console.log(place);
+  // console.log(place);
 
   const { image, placeName, location, description, category, country } = place;
   return (

@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 import ActiveLink from "../../../Components/ActiveLink/ActiveLink";
 import "./Navbar.css";
 import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
+import useAuth from "../../../Hooks/UseAuth/UseAuth";
 
 const Navbar = () => {
+  const { logOut } = useAuth();
+
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="sticky top-0 left-0 z-50">
       <div className="flex justify-between items-center w-full absolute top-0 left-0  bg-[rgba(0,0,0,0.6)] py-3 px-[5%] text-white">
@@ -33,6 +42,9 @@ const Navbar = () => {
           <Link to="/login">
             <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
           </Link>
+          <p onClick={handleLogOut}>
+            <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
+          </p>
         </div>
       </div>
     </div>
