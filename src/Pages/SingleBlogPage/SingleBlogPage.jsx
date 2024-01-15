@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
+import Trending from "../../Shared/Trending/Trending";
 
 const SingleBlogPage = () => {
   //get the for specific this id which is given in router.jsx
@@ -19,6 +20,7 @@ const SingleBlogPage = () => {
     <div>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
+      <Trending></Trending>
     </div>
   );
 };
