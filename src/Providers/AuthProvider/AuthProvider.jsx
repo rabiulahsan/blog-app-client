@@ -8,6 +8,7 @@ import {
 } from "firebase/auth";
 import { app } from "../../firebase/firebase.config";
 import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const AuthContext = createContext(null);
 
@@ -29,29 +30,29 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  // create a observer
-  //   useEffect(() => {
-  //     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
-  //       setUser(loggedUser);
-  //       if (loggedUser) {
-  //         //using axios for fetch
-  //         axios
-  //           .post("https://skill-builder-server.vercel.app/jwt", {
-  //             email: loggedUser.email,
-  //           })
-  //           .then((data) => {
-  //             localStorage.setItem("access-token", data.data.token);
-  //             setLoading(false);
-  //           });
-  //       } else {
-  //         localStorage.removeItem("access-token");
-  //       }
-  //     });
+  //   create a observer
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
+      setUser(loggedUser);
+      if (loggedUser) {
+        //using axios for fetch
+        axios
+          .post("http://localhost:5000/jwt", {
+            email: loggedUser.email,
+          })
+          .then((data) => {
+            localStorage.setItem("access-token", data.data.token);
+            setLoading(false);
+          });
+      } else {
+        localStorage.removeItem("access-token");
+      }
+    });
 
-  //     return () => {
-  //       return unsubscribe();
-  //     };
-  //   }, []);
+    return () => {
+      return unsubscribe();
+    };
+  }, []);
   const authDetails = {
     user,
     loading,
