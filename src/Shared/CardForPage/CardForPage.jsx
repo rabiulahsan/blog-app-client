@@ -4,11 +4,12 @@ import "./CardForPage.css";
 
 const CardForPage = ({ details }) => {
   // console.log(details);
-  const { image, title, name } = details;
+  const { image, title, name, countryName } = details;
 
   return (
     <div className=" relative h-[260px]  main  cursor-pointer my-5">
-      <Link to={name ? `/categories/${name}` : `/countries/${title}`}>
+      {/* created dynamic link for category and country page  */}
+      <Link to={name ? `/categories/${name}` : `/countries/${countryName}`}>
         <img
           className="h-full w-full object-cover  rounded-lg mb-3"
           src={image}

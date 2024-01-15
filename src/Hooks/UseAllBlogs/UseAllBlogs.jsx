@@ -5,8 +5,8 @@ const UseAllBlogs = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // fetch("http://localhost:5000/blogs")
-    fetch("blogs.json")
+    // fetch("blogs.json")
+    fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => {
         setAllBlogs(data);
@@ -14,6 +14,7 @@ const UseAllBlogs = () => {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+  // console.log(allBlogs);
 
   return [allBlogs, isLoading];
 };
