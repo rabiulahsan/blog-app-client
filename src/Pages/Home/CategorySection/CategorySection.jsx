@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import UseCategories from "../../../Hooks/UseCategories/UseCategories";
 import CategoryCard from "./CategoryCard";
+import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
 
 const CategorySection = () => {
   //getiing all categories
@@ -17,9 +18,11 @@ const CategorySection = () => {
           <CategoryCard key={category?.id} details={category}></CategoryCard>
         ))}
       </div>
-      <button className="orange-small-btn absolute right-[10%] bottom-[20px]">
-        <Link to="/categories">All Categories</Link>
-      </button>
+      <div className=" absolute right-[10%] bottom-[20px]">
+        <Link to="/categories">
+          <HoverOverlayButton btnName="All Categories"></HoverOverlayButton>
+        </Link>
+      </div>
     </div>
   );
 };

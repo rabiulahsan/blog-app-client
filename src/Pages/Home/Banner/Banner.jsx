@@ -77,7 +77,7 @@ const Banner = () => {
             <button
               onMouseMove={(e) => handleMouseMove(e)}
               style={buttonStyles}
-              className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 before:bg-white hover:text-orange-600"
+              className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
             >
               <span className="relative z-10">Explorer</span>
             </button>

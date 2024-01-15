@@ -26,7 +26,7 @@ const HoverOverlayButton = ({ btnName }) => {
     <button
       onMouseMove={(e) => handleMouseMove(e)}
       style={buttonStyles}
-      className="  button px-5 py-2 my-3 font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
+      className="  button px-5 py-2  font-semibold text-base rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
     >
       <span className="relative z-30">{btnName}</span>
     </button>

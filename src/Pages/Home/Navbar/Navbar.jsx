@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ActiveLink from "../../../Components/ActiveLink/ActiveLink";
 import "./Navbar.css";
+import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
 
 const Navbar = () => {
   return (
@@ -30,7 +31,7 @@ const Navbar = () => {
         </div>
         <div className="">
           <Link to="/">
-            <button className="orange-small-btn">Become Writer?</button>
+            <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
           </Link>
         </div>
       </div>
