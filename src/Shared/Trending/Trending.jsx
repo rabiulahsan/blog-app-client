@@ -3,13 +3,14 @@ import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
 import Card from "../Card/Card";
 
 const Trending = () => {
-  //get all th eblogs data
+  //get all the blogs data
   const allBlogs = UseAllBlogs();
   // console.log(allBlogs);
 
   //filter the only trending blog
   const trendingPlaces = allBlogs[0]?.filter((blog) => blog.trending);
   // console.log(trendingPlaces);
+
   return (
     <div className="my-[5%]">
       {/* sectiontitle recieved the props and apply a design.  */}

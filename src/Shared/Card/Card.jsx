@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Card.css";
 const Card = ({ place }) => {
   // console.log(place);
+
   return (
     <div className=" relative h-[260px]  main  cursor-pointer my-[5%]">
       <Link to={`/${place?._id}`}>
