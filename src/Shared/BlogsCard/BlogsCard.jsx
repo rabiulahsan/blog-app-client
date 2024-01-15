@@ -20,7 +20,7 @@ const BlogsCard = ({ place }) => {
       </div>
       <p className="text-center">{description.slice(0, 120) + "..."}</p>
       <div className="flex justify-center items-center my-3">
-        <Link to={`${_id}`}>
+        <Link to={`/${_id}`}>
           <HoverOverlayButton btnName="Read More"></HoverOverlayButton>
         </Link>
       </div>
