@@ -5,6 +5,7 @@ import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
+import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 
 const BlogPage = () => {
   //getting all blogs data
@@ -16,6 +17,8 @@ const BlogPage = () => {
   };
   return (
     <div className="mb-[5%]">
+      {/* this is for scroll to top after coming this page  */}
+      <ScrollToTop></ScrollToTop>
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Blogs"></PageTitle>
       <Navbar></Navbar>

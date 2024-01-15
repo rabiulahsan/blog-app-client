@@ -3,6 +3,7 @@ import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import Trending from "../../Shared/Trending/Trending";
 import { FaRegHeart } from "react-icons/fa";
+import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 
 const SingleBlogPage = () => {
   //get the for specific this id which is given in router.jsx
@@ -19,6 +20,8 @@ const SingleBlogPage = () => {
   };
   return (
     <div>
+      {/* this is for scroll to top after coming this page  */}
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <div className="my-[3%] flex  justify-center items-center ">

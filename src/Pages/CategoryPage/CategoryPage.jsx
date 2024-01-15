@@ -1,4 +1,5 @@
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCategories from "../../Hooks/UseCategories/UseCategories";
 import CardForPage from "../../Shared/CardForPage/CardForPage";
@@ -15,6 +16,8 @@ const CategoryPage = () => {
   };
   return (
     <div>
+      {/* this is for scroll to top after coming this page  */}
+      <ScrollToTop></ScrollToTop>
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Categories"></PageTitle>
       <Navbar></Navbar>

@@ -7,6 +7,7 @@ import Beauty from "../Beauty/Beauty";
 import BlogSection from "../BlogSection/BlogSection";
 import CategorySection from "../CategorySection/CategorySection";
 import Navbar from "../Navbar/Navbar";
+import ScrollToTop from "../../../Components/ScrollToTop/ScrollToTop";
 
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -15,6 +16,9 @@ const Home = () => {
   const scaleX = useSpring(scrollYProgress);
   return (
     <div>
+      {/* this is for scroll to top after coming this page  */}
+      <ScrollToTop></ScrollToTop>
+
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Get Close to Nature"></PageTitle>
 

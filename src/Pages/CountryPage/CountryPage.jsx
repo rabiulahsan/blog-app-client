@@ -1,4 +1,5 @@
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCountries from "../../Hooks/UseCountries/UseCountries";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
@@ -14,6 +15,8 @@ const CountryPage = () => {
   };
   return (
     <div>
+      {/* this is for scroll to top after coming this page  */}
+      <ScrollToTop></ScrollToTop>
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Countries"></PageTitle>
       <Navbar></Navbar>
