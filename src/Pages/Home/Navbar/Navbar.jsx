@@ -37,6 +37,11 @@ const Navbar = () => {
                 <ActiveLink to="/categories">Categoires</ActiveLink>
               </span>
             </li>
+            <li className="navlink-hover">
+              <span>
+                <ActiveLink to="/favourites">Favourites</ActiveLink>
+              </span>
+            </li>
           </ul>
         </div>
         <div className="flex items-center gap-x-5">
