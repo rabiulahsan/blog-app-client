@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Card.css";
 const Card = ({ place }) => {
   // console.log(place);
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className=" relative h-[260px]  main  cursor-pointer my-[5%]">
-      <Link to={`/${place?._id}`}>
+      <Link onClick={handleClick} to={`/${place?._id}`}>
         <img
           className="h-full w-full object-cover  rounded-lg mb-3"
           src={place?.image}
