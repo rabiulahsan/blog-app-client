@@ -4,6 +4,7 @@ import Navbar from "../Home/Navbar/Navbar";
 import UseCountries from "../../Hooks/UseCountries/UseCountries";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
+import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 
 const SingleCountryPage = () => {
   //getting current country name
@@ -32,21 +33,17 @@ const SingleCountryPage = () => {
 
   return (
     <div>
-      {isLoading ? (
-        <p>loading ...</p>
-      ) : (
-        <>
-          <Navbar></Navbar>
-          <PageBanner details={currentCountryDetails[0]}></PageBanner>
+      <Navbar></Navbar>
+      <PageBanner details={currentCountryDetails[0]}></PageBanner>
 
-          {/* this is for specific place card  */}
-          <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
-            {currentCountryBlogs?.map((place) => (
-              <BlogsCard key={place.index} place={place}></BlogsCard>
-            ))}
-          </div>
-        </>
-      )}
+      {/* this is for specific place card  */}
+      <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+        {/* this id for skeleton */}
+        {isLoading && <SkeletonCard number={16}></SkeletonCard>}
+        {currentCountryBlogs?.map((place) => (
+          <BlogsCard key={place.index} place={place}></BlogsCard>
+        ))}
+      </div>
     </div>
   );
 };

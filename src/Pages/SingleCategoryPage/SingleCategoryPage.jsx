@@ -4,6 +4,7 @@ import UseCategories from "../../Hooks/UseCategories/UseCategories";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
+import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 
 const SingleCategoryPage = () => {
   //getting current category name
@@ -11,7 +12,7 @@ const SingleCategoryPage = () => {
   // console.log(currentCountry);
 
   //getting all blogs
-  const [allBlogs] = UseAllBlogs();
+  const [allBlogs, isLoading] = UseAllBlogs();
   // console.log(allBlogs);
 
   // getting all categories
@@ -37,6 +38,8 @@ const SingleCategoryPage = () => {
 
       {/* this is for specific place card  */}
       <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+        {/* this id for skeleton */}
+        {isLoading && <SkeletonCard number={16}></SkeletonCard>}
         {currentCategoryBlogs?.map((place) => (
           <BlogsCard key={place.index} place={place}></BlogsCard>
         ))}
