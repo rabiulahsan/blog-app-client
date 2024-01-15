@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const PageBanner = ({ details }) => {
-  console.log(details);
+  // console.log(details);
   return (
     <div className="w-full h-[360px] relative mb-[5%]">
       <img className="w-full h-full object-cover" src={details?.image} alt="" />

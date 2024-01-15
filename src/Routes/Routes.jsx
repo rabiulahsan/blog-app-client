@@ -7,6 +7,7 @@ import BlogPage from "../Pages/BlogPage/BlogPage";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import SingleBlogPage from "../Pages/SingleBlogPage/SingleBlogPage";
+import SingleCategoryPage from "../Pages/SingleCategoryPage/SingleCategoryPage";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,12 @@ export const router = createBrowserRouter([
       {
         path: "/categories",
         element: <CategoryPage></CategoryPage>,
+      },
+      {
+        path: "/categories/:category",
+        element: <SingleCategoryPage></SingleCategoryPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/categories/${params.category}`),
       },
       {
         path: "/login",

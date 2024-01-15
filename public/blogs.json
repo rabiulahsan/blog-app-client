@@ -6,7 +6,7 @@
     "location": "Bangladesh",
     "image": "https://media-cdn.tripadvisor.com/media/photo-c/1280x250/10/e2/f8/43/longest-sea-beach-in.jpg",
     "description": "Cox's Bazar is a town on the southeast coast of Bangladesh. It is famous for its long sandy beach, which stretches for 120 kilometers. The beach is lined with palm trees and is a popular destination for tourists. Cox's Bazar is also home to the Himchori Waterfall, which is located in the nearby hills. The waterfall is surrounded by lush green forests and is a popular spot for picnics and hiking. Cox's Bazar is a must-visit destination for anyone who loves natural beauty, history, and culture.",
-    "category": "Beach",
+    "category": "beach",
     "country": "Bangladesh",
     "trending": false
 },
@@ -17,7 +17,7 @@
     "location": "India",
     "image": "https://www.thoughtco.com/thmb/mvzDYqXzP4T_D7JfMTsWm5GgDZA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunrise-at-taj-mahal--agra--uttar-pradash--india-583682538-5b91840bc9e77c0050bdc67b.jpg",
     "description": "The Taj Mahal is a white marble mausoleum located in Agra, India. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. The Taj Mahal is considered one of the most beautiful buildings in the world and is a UNESCO World Heritage Site. The monument is surrounded by beautiful gardens and is a popular destination for tourists. The Taj Mahal is a must-visit destination for anyone who loves history, architecture, and culture.",
-    "category": "Monument",
+    "category": "monument",
     "country": "India",
     "trending": false
 },
@@ -28,7 +28,7 @@
     "location": "California, USA",
     "image": "https://www.travelandleisure.com/thmb/PtkzpF17oxHfxuTbsnUx7oJY20A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lake-tahoe-california-USLAKES0920-59df9ea26eaf4bbba7620eb604f0af3c.jpg",
     "description": "Lake Tahoe is a large freshwater lake in the Sierra Nevada Mountains, straddling the border of California and Nevada. It’s known for its beaches and ski resorts. On the southwest shore, Emerald Bay State Park contains the 1929 Nordic-style mansion Vikingsholm. Along the lake’s northeast side, Lake Tahoe Nevada State Park includes Sand Harbor Beach and Spooner Lake, a gateway to the long-distance Tahoe Rim Trail. ",
-    "category": "Lake",
+    "category": "lake",
     "country": "USA",
     "trending": true
 },
@@ -51,7 +51,7 @@
     "location": "Ontario, Canada",
     "image": "https://spencerdurrant.com/wp-content/uploads/2022/02/niagara_1.jpg",
     "description": "Niagara Falls is a group of three waterfalls located on the Niagara River, which forms the border between the United States and Canada. The falls are located in the province of Ontario, Canada. Niagara Falls is one of the most popular tourist destinations in the world and attracts millions of visitors every year. The falls are surrounded by beautiful parks and are a popular spot for hiking, camping, and picnics. Niagara Falls is a must-visit destination for anyone who loves natural beauty, adventure, and outdoor activities.",
-    "category": "Waterfall",
+    "category": "waterfall",
     "country": "Canada",
     "trending": true
 },
@@ -62,7 +62,7 @@
     "location": "Bangladesh",
     "image": "https://i.natgeofe.com/n/a50f7239-ff6d-4874-9448-25d94d8d1c80/sundarbans-bangladesh_16x9.jpg?w=1200",
     "description": "The Sundarbans is a mangrove forest located in the delta region of the Ganges, Brahmaputra, and Meghna rivers. It is located in the Khulna and Satkhira districts of Bangladesh and the Indian state of West Bengal. The Sundarbans is a UNESCO World Heritage Site and is home to the Bengal tiger. The forest is also home to many unique plants and animals and is a popular spot for birdwatching and wildlife photography. The Sundarbans is a must-visit destination for anyone who loves natural beauty, adventure, and wildlife.",
-    "category": "Forest",
+    "category": "forest",
     "country":"Bangladesh",
     "trending":false
 },
@@ -75,7 +75,7 @@
       "location": "Queensland, Australia",
       "image": "https://cdn.britannica.com/64/155864-050-34FBD7A2/view-Great-Barrier-Reef-Australia-coast.jpg",
       "description": "The Great Barrier Reef is the world's largest coral reef system, located in the Coral Sea, off the coast of Queensland, Australia. It is home to thousands of species of marine life, including whales, dolphins, sea turtles, and sharks. The Great Barrier Reef is a UNESCO World Heritage Site and is one of the most popular tourist destinations in Australia. It is known for its stunning coral formations, crystal-clear waters, and vibrant marine life.",
-      "category": "Beach",
+      "category": "beach",
       "country": "Australia",
       "trending": true
     },
@@ -87,8 +87,8 @@
     "location": "Stewart Island/Rakiura, New Zealand",
     "image": "https://i0.wp.com/expeditom.com/wp-content/uploads/2019/08/ExpediTom-Stewart-Island-in-Winter-004.jpg",
     "description": "The Rakiura Track is a 32 km loop track located in Rakiura National Park and Stewart Island/Rakiura in the Southland region of New Zealand. The track is known for its stunning views of the island's unique flora and fauna, including the Royal Albatross and the Stewart Island Robin. The Rakiura Track is a Great Walk and is one of the quietest Great Walks in pristine wilderness. It is an easy track that can be walked by anyone of average fitness.",
-    "category": "Hike",
-    "country": "New Zealand",
+    "category": "hike",
+    "country": "New-Zealand",
     "trending": false
   },
   {
@@ -98,7 +98,7 @@
     "location": "Tennessee, USA",
     "image": "https://i.natgeofe.com/n/65a0930b-9efd-40c4-8b6b-fa7fd4f05140/92508_3x2.jpg",
     "description": "Great Smoky Mountains National Park is a national park located in the southeastern United States, straddling the border between Tennessee and North Carolina. The park is known for its stunning views of the Appalachian Mountains, its diverse wildlife, and its rich cultural history. It is the most visited national park in the United States and is a must-see destination for anyone visiting Tennessee.",
-    "category": "National park",
+    "category": "national-park",
     "country": "USA",
     "trending": true
   },
@@ -109,7 +109,7 @@
     "location": "Utah, USA",
     "image": "https://media.cntraveler.com/photos/5963fa9a7fb62c4aeab0b25c/master/pass/hikes-zion-angels-landing-CEBP0W.jpg",
     "description": "Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike. ",
-    "category": "Hike",
+    "category": "hike",
     "country": "USA",
     "trending": true
   },
@@ -120,7 +120,7 @@
     "location": "Iceland",
     "image": "https://www.icelandtravel.is/_next/image/?url=https%3A%2F%2Fcontent.icelandtravel.is%2Fwp-content%2Fuploads%2F2022%2F06%2FFjallsarlon-Vatnajokull-Glacier-shutterstock_1350464792-scaled.jpg&w=3840&q=75",
     "description": "Vatnajökull Glacier is the largest glacier in Iceland and one of the largest in Europe. It covers an area of over 8,000 square kilometers and is home to some of the most stunning ice caves and glacier lagoons in the world. The glacier is a popular tourist destination and is known for its stunning views, hiking trails, and wildlife.",
-    "category": "Glacier",
+    "category": "glacier",
     "country": "Iceland",
     "trending": false
   },
@@ -131,7 +131,7 @@
     "location": "Iceland",
     "image": "https://skaftafell.com/wp-content/uploads/2019/12/0-Skaftafell-Ice-Cave-WInter-2019-2020.jpg",
     "description": "Skaftafell Glacier is a glacier located in Vatnajökull National Park in Iceland. It is known for its stunning views of the surrounding mountains and glaciers, as well as its unique flora and fauna. Skaftafell Glacier is a popular tourist destination and is known for its hiking trails, ice climbing, and wildlife.",
-    "category": "Glacier",
+    "category": "glacier",
     "country": "Iceland",
     "trending": false
   },
@@ -142,7 +142,7 @@
     "location": "Africa",
     "image": "https://wallpapers.com/images/hd/savannah-silhouette-africa-4k-5w0gt8jfrdn1rohb.jpg",
     "description": "Savannah is a vast grassland ecosystem located in Africa, covering over 5 million square kilometers. It is home to some of the most iconic wildlife in the world, including lions, elephants, giraffes, and zebras. Savannah is a popular tourist destination and is known for its stunning views, wildlife safaris, and cultural experiences.",
-    "category": "Forest",
+    "category": "forest",
     "country": "Africa",
     "trending": false
   },
@@ -153,7 +153,7 @@
       "location": "Victoria, Australia",
       "image": "https://www.telegraph.co.uk/content/dam/Travel/2016/November/great-ocean-road-12-apostles-AP.jpg",
       "description": "The Great Ocean Road is a 243 km stretch of road along the south-eastern coast of Australia, between the Victorian cities of Torquay and Allansford. It is known for its stunning views of the ocean, cliffs, and beaches, as well as its unique flora and fauna. The Great Ocean Road is a popular tourist destination and is known for its scenic drives, hiking trails, and wildlife.",
-      "category": "Hike",
+      "category": "hike",
       "country": "Australia",
       "trending": false
     },
@@ -165,7 +165,7 @@
       "location": "China",
       "image": "https://cdn.britannica.com/82/94382-050-20CF23DB/Great-Wall-of-China-Beijing.jpg",
       "description": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe. The Great Wall of China is a UNESCO World Heritage Site and one of the most popular tourist destinations in China. It is known for its stunning views, ancient architecture, and rich history.",
-      "category": "Hike",
+      "category": "hike",
       "country": "China",
       "trending": false
     },
@@ -176,7 +176,7 @@
       "location": "Giza, Egypt",
       "image": "https://cdn.mos.cms.futurecdn.net/YMa7Wx2FyjQFUjEeqa72Rm.jpg",
       "description": "The Pyramids of Giza are a complex of ancient monuments located in the Giza pyramid complex in Egypt. They are the only surviving member of the Seven Wonders of the Ancient World and are a UNESCO World Heritage Site. The pyramids were built as tombs for the pharaohs and their consorts during the Old and Middle Kingdom periods. The Pyramids of Giza are known for their stunning views, ancient architecture, and rich history.",
-      "category": "Monument",
+      "category": "monument",
       "country": "Egypt",
       "trending": false
     },
@@ -187,7 +187,7 @@
         "location": "Naogaon, Bangladesh",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Paharpur_Buddhist_Bihar.jpg",
         "description": "Paharpur is an archaeological site located in Naogaon, Bangladesh. It is the site of the ruins of an ancient Buddhist monastery and is a UNESCO World Heritage Site. The site is a popular tourist destination and is known for its historical significance and stunning architecture. Paharpur is a must-visit destination for anyone interested in history and culture.",
-        "category": "Monument",
+        "category": "monument",
         "country": "Bangladesh",
         "trending": false
       },
@@ -198,7 +198,7 @@
         "location": "Barishal, Bangladesh",
         "image": "https://live.staticflickr.com/5742/21103803399_c21a5f6b67_b.jpg",
         "description": "Peyarabagan is a small village located in Barishal, Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The village is a popular tourist destination and is known for its water sports, including boating, fishing, and kayaking. Peyarabagan is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The village is a must-visit destination for anyone traveling to Barishal.",
-        "category": "Forest",
+        "category": "forest",
         "country": "Bangladesh",
         "trending": false
       },  {
@@ -208,7 +208,7 @@
         "location": "Chittagong, Bangladesh",
         "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Sunset_at_Saint_Martin.jpg",
         "description": "Saint Martin Island is a small island located in the Bay of Bengal, about 9 km south of the tip of the Cox’s Bazar-Teknaf peninsula. It is known for its stunning white-sand beaches, crystal-clear waters, and vibrant marine life. The island is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Saint Martin Island is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The island is a must-visit destination for anyone traveling to Bangladesh.",
-        "category": "Beach",
+        "category": "beach",
         "country": "Bangladesh",
         "trending": true
       },{
@@ -218,7 +218,7 @@
         "location": "India",
         "image": "https://economictimes.indiatimes.com/thumb/msid-70104165,width-1200,height-900,resizemode-4,imgsize-1445127/jaipur_gettyimages.jpg?from=mdr",
         "description": "Jaipur is a city located in the northern Indian state of Rajasthan. It is known for its stunning palaces, forts, and temples, which reflect the city's rich history and culture. The city is a popular tourist destination and is known for its vibrant markets, colorful textiles, and delicious cuisine. Jaipur is also home to some of the best luxury hotels in India, offering visitors a chance to experience the city's royal heritage. The city is a must-visit destination for anyone traveling to India.",
-        "category": "City",
+        "category": "city",
         "country": "India",
         "trending": false
       },
@@ -229,7 +229,7 @@
         "location": "South Korea",
         "image": "https://static.independent.co.uk/2022/12/29/14/iStock-464629385.jpg",
         "description": "Seoul is the capital city of South Korea. It is known for its stunning palaces, temples, and museums, which reflect the city's rich history and culture. The city is a popular tourist destination and is known for its vibrant markets, delicious cuisine, and bustling nightlife. Seoul is also home to some of the best shopping destinations in Asia, offering visitors a chance to experience the city's modern side. The city is a must-visit destination for anyone traveling to Asia.",
-        "category": "City",
+        "category": "city",
         "country": "South Korea",
         "trending":false
       },  {
@@ -239,7 +239,7 @@
         "location": "Maldives",
         "image": "https://i.pinimg.com/originals/fe/3a/96/fe3a96c12a1cfb320d1ce8205d90e206.jpg",
         "description": "Fulhadhoo Beach is a small beach located in the Baa Atoll in the Maldives. It is known for its stunning white-sand beaches, crystal-clear waters, and vibrant marine life. The beach is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Fulhadhoo Beach is also home to some of the best seafood restaurants in the Maldives, serving up fresh fish, crab, and lobster. The beach is a must-visit destination for anyone traveling to the Maldives.",
-        "category": "Beach",
+        "category": "beach",
         "country": "Maldives",
         "trending": false
       }, {
@@ -249,7 +249,7 @@
         "location": "Maldives",
         "image": "https://timesofaddu.com/wp-content/uploads/2022/11/9ADB048B-7650-4CB6-A3CC-85349C000AD0.jpeg",
         "description": "Maafushi Island is a small island located in the Kaafu Atoll in the Maldives. It is known for its stunning beaches, crystal-clear waters, and vibrant marine life. The island is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Maafushi Island is also home to some of the best seafood restaurants in the Maldives, serving up fresh fish, crab, and lobster. The island is a must-visit destination for anyone traveling to the Maldives.",
-        "category": "Beach",
+        "category": "beach",
         "country": "Maldives",
         "trending": false
       }, {
@@ -259,7 +259,7 @@
         "location": "Dubai, UAE",
         "image": "https://media.cnn.com/api/v1/images/stellar/prod/170509143610-dubai-miracle-garden-aerial-view.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618",
         "description": "Dubai Miracle Garden is a flower garden located in Dubai, United Arab Emirates. It is the world's largest flower garden and is home to over 45 million flowers. The garden is a popular tourist destination and is known for its stunning floral displays, including a life-size Airbus A380 made entirely out of flowers. Dubai Miracle Garden is a must-visit destination for anyone traveling to Dubai.",
-        "category": "City",
+        "category": "city",
         "country": "UAE",
         "trending": false
       },
@@ -270,7 +270,7 @@
         "location": "Dubai, UAE",
         "image": "https://www.visitdubai.com/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/poi-burj-khalifa-3-dtcm-jun-2023.jpg",
         "description": "Burj Khalifa is a skyscraper located in Dubai, United Arab Emirates. It is the tallest building in the world and is a popular tourist destination. The building is known for its stunning views of the city, including the Dubai Fountain and the Palm Jumeirah. Burj Khalifa is a must-visit destination for anyone traveling to Dubai.",
-        "category": "City",
+        "category": "city",
         "country": "UAE",
         "trending": false
       },
@@ -281,7 +281,7 @@
         "location": "Dubai, UAE",
         "image": "https://i0.wp.com/bookme.tours/wp-content/uploads/2023/05/panoramic-view-famous-skyscrapers-jumeirah-beach-dubai-uae-scaled-1.jpeg?resize=1200%2C675&ssl=1",
         "description": "Jumeirah Beach is a public beach located in Dubai, United Arab Emirates. It is known for its stunning views of the Persian Gulf, crystal-clear waters, and soft white sand. The beach is a popular tourist destination and is known for its water sports, including jet skiing, parasailing, and banana boating. Jumeirah Beach is a must-visit destination for anyone traveling to Dubai.",
-        "category": "Beach",
+        "category": "beach",
         "country": "UAE",
         "trending": false
       },
@@ -292,7 +292,7 @@
           "location": "India",
           "image": "https://static.theprint.in/wp-content/uploads/2020/08/Untitled-design-2020-08-09T193331.340.jpg",
           "description": "Andaman and Nicobar Islands is a group of islands located in the Bay of Bengal, India. It is known for its stunning white-sand beaches, crystal-clear waters, and vibrant marine life. The islands are a popular tourist destination and are known for their water sports, including scuba diving, snorkeling, and kayaking. Andaman and Nicobar Islands are also home to some of the best seafood restaurants in India, serving up fresh fish, crab, and lobster. The islands are a must-visit destination for anyone traveling to India.",
-          "category": "Beach",
+          "category": "beach",
           "country": "India",
           "trending": false
         },
@@ -303,7 +303,7 @@
           "location": "India",
           "image": "https://media.assettype.com/outlooktraveller/2023-10/58f54026-deb0-437b-bc77-dd43b91d161e/shutterstock_1243206058.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
           "description": "Jaisalmer is a city located in the Indian state of Rajasthan. It is known for its stunning sandstone architecture, including the Jaisalmer Fort and the Jain Temples. The city is a popular tourist destination and is known for its vibrant markets, colorful textiles, and delicious cuisine. Jaisalmer is also home to some of the best luxury hotels in India, offering visitors a chance to experience the city's royal heritage. The city is a must-visit destination for anyone traveling to India.",
-          "category": "City",
+          "category": "city",
           "country": "India",
           "trending": false
         },
@@ -314,7 +314,7 @@
           "location": "India",
           "image": "https://www.revv.co.in/blogs/wp-content/uploads/2021/11/Patnitop.jpg",
           "description": "Jammu and Kashmir is a region located in northern India. It is known for its stunning natural beauty, including the Himalayan mountain range, the Dal Lake, and the Mughal Gardens. The region is a popular tourist destination and is known for its trekking trails, skiing resorts, and water sports. Jammu and Kashmir is also home to some of the best luxury hotels in India, offering visitors a chance to experience the region's royal heritage. The region is a must-visit destination for anyone traveling to India.",
-          "category": "Mountain",
+          "category": "mountain",
           "country": "India",
           "trending": true
         },
@@ -325,7 +325,7 @@
           "location": "India",
           "image": "https://media2.thrillophilia.com/images/photos/000/200/736/original/1585336141_2.jpg?",
           "description": "Darjeeling is a town located in the Indian state of West Bengal. It is known for its stunning tea plantations, lush greenery, and cool climate. The town is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Darjeeling is also home to some of the best tea estates in India, producing high-quality tea that is exported all over the world. The town is a must-visit destination for anyone traveling to India.",
-          "category": "City",
+          "category": "city",
           "country": "India",
           "trending": false
         },
@@ -336,7 +336,7 @@
           "location": "India",
           "image": "https://d26dp53kz39178.cloudfront.net/media/uploads/Travel_Guide_Images/places_to_visit_in_manali_in_december_11zon_result-1657097873625.webp",
           "description": "Manali is a town located in the Indian state of Himachal Pradesh. It is known for its stunning natural beauty, including the Himalayan mountain range, the Beas River, and the Solang Valley. The town is a popular tourist destination and is known for its trekking trails, skiing resorts, and water sports. Manali is also home to some of the best luxury hotels in India, offering visitors a chance to experience the town's royal heritage. The town is a must-visit destination for anyone traveling to India.",
-          "category": "Mountain",
+          "category": "mountain",
           "country": "India",
           "trending": false
         },
@@ -347,7 +347,7 @@
             "location": "Hulhumale, Maldives",
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Hulhumale_Beach-Maldives-Andres_Larin.jpg",
             "description": "Hulhumale Beach, nestled in the heart of the Maldives, beckons with its pristine shores and azure waters. The beach is a tranquil escape, offering powdery white sand and vibrant coral reefs. Relax under swaying palms, indulge in water sports, and witness breathtaking sunsets over the Indian Ocean. Hulhumale Beach is a paradise for beach lovers seeking serenity and natural beauty.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -358,7 +358,7 @@
             "location": "Baa Atoll, Maldives",
             "image": "https://www.reethibeach.com/images/site-specific/reethi-beach-main-banner.jpg",
             "description": "Reethi Beach, located in the UNESCO Biosphere Reserve of Baa Atoll, is a haven for those seeking an idyllic tropical escape. The beach boasts crystal-clear waters, vibrant coral gardens, and luxurious overwater bungalows. Dive into the underwater wonders of the Maldives, unwind on soft sandy shores, and savor exquisite cuisine with ocean views. Reethi Beach promises a perfect blend of luxury and nature's splendor.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -369,7 +369,7 @@
             "location": "North Ari Atoll, Maldives",
             "image": "https://images.squarespace-cdn.com/content/v1/5956050736e5d3e59a162d74/1571391724318-C6VNPPZ81F39O8GZIEA5/Maldives_Kandolhu-266-20170505.jpg",
             "description": "Kandolhu Island Beach, nestled in North Ari Atoll, Maldives, is a tropical paradise where palm-fringed shores meet turquoise lagoons. The intimate island offers a private escape with pristine beaches, luxurious villas, and vibrant coral reefs. Dive into the warm Indian Ocean, unwind in overwater retreats, and relish the personalized service that defines Kandolhu. This beach is a sanctuary for discerning travelers seeking tranquility and natural beauty.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -380,7 +380,7 @@
             "location": "South Male Atoll, Maldives",
             "image": "https://www.africaodyssey.com/site/odyssey-image-proxy/lodges/cocoa-island=403739-300.jpg",
             "description": "Cocoa Island Beaches, situated in South Male Atoll, Maldives, offer a blissful retreat surrounded by turquoise waters and coral reefs. The beaches are adorned with soft white sand, overwater bungalows, and vibrant marine life. Immerse yourself in the healing waters of the COMO Shambhala Retreat, explore underwater wonders, and savor gourmet dining with ocean views. Cocoa Island is a luxurious haven for those seeking rejuvenation and tropical elegance.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -391,7 +391,7 @@
             "location": "Baa Atoll, Maldives",
             "image": "https://www.exquisitecoasts.com/images/petit-anse-four-seasons-photo.jpg",
             "description": "Four Seasons Beach in Baa Atoll, Maldives, epitomizes luxury and natural beauty. Indulge in a world-class resort experience with pristine beaches, spacious villas, and unparalleled service. Immerse yourself in the vibrant marine life of Hanifaru Bay, unwind in lavish accommodations, and dine under the stars. Four Seasons Beach offers an exclusive escape for those seeking opulence and a connection with the Maldives' marine wonders.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -402,7 +402,7 @@
             "location": "North Ari Atoll, Maldives",
             "image": "https://media.kiwi.com/wp-content/uploads/2021/06/veligandu-island-beach-of-the-maldives-scaled.jpg",
             "description": "Veligandu Island Beaches, located in North Ari Atoll, Maldives, offer a romantic and serene escape in the heart of the Indian Ocean. The beaches boast powdery white sand, turquoise lagoons, and overwater bungalows. Immerse yourself in the adult-only atmosphere, enjoy water sports, and savor candlelit dinners with ocean views. Veligandu Island is a perfect retreat for couples seeking intimacy and natural beauty.",
-            "category": "Beach",
+            "category": "beach",
             "country": "Maldives",
             "trending": false
           },
@@ -415,7 +415,7 @@
               "location": "Sylhet, Bangladesh",
               "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ratargul_Swamp_Forest%2C_Sylhet%2C_Bangladesh.jpg/2560px-Ratargul_Swamp_Forest%2C_Sylhet%2C_Bangladesh.jpg",
               "description": "Ratargul Swamp Forest is a freshwater swamp forest located in Gowain River, Fatehpur Union, Gowainghat, Sylhet, Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The forest is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Ratargul Swamp Forest is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The forest is a must-visit destination for anyone traveling to Bangladesh.",
-              "category": "Forest",
+              "category": "forest",
               "country": "Bangladesh",
               "trending": false
             },
@@ -426,7 +426,7 @@
               "location": "Chittagong Hill Tracts, Bangladesh",
               "image": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogzB8BGDn5J45LisskNSi5r3F07ohqWXZ4.png",
               "description": "Sajek is a hill station located in the Chittagong Hill Tracts of Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The hill station is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Sajek is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The hill station is a must-visit destination for anyone traveling to Bangladesh.",
-              "category": "Hill station",
+              "category": "hike",
               "country": "Bangladesh",
               "trending": true
             },
@@ -437,7 +437,7 @@
               "location": "Dhaka, Bangladesh",
               "image": "https://nakshabid.com/wp-content/uploads/2022/07/Military-Museum-4.jpg",
               "description": "Bangabandhu Military Museum is a military museum of Bangladesh. Administered by the Bangladesh Army, the museum is located right beside the Bangabandhu Sheikh Mujibur Rahman Novo Theatre at Bijoy Sarani of the capital Dhaka. The museum has a collection of Bangladesh's military history, heritage, success stories and various weapons and ammunition. It is now most popular to the young generation and also to the ll ages people. ",
-              "category": "Monument",
+              "category": "monument",
               "country": "Bangladesh",
               "trending": false
             },
@@ -448,7 +448,7 @@
               "location": "Cox's Bazar, Bangladesh",
               "image": "https://live.staticflickr.com/1480/26340134276_23448274fd_b.jpg",
               "description": "Himchori is a waterfall located in Cox's Bazar, Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The waterfall is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and water sports. Himchori is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The waterfall is a must-visit destination for anyone traveling to Bangladesh.",
-              "category": "Hike",
+              "category": "hike",
               "country": "Bangladesh",
               "trending": false
             },
@@ -459,7 +459,7 @@
               "location": "Chittagong Hill Tracts, Bangladesh",
               "image": "https://isshh.com/wp-content/uploads/2015/01/Rangamati.jpg",
               "description": "Rangamati is a town located in the Chittagong Hill Tracts of Bangladesh. It is known for its stunning natural beauty, including lush greenery, crystal-clear waters, and vibrant wildlife. The town is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Rangamati is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster.",
-              "category":"Village",
+              "category":"village",
               "country":"Bangladesh",
               "trending":false
             },
@@ -472,7 +472,7 @@
                   "location": "Bangladesh",
                   "image": "https://2.bp.blogspot.com/-wCjU6xet9Ik/WeZz5ZSuJDI/AAAAAAAAAEw/6egGD19mWrQfV6abS0_PS04tM1j_xMi5ACLcBGAs/s1600/tea_garden_wallpaper.jpg",
                   "description": "Sreemangal is a town located in the northeastern part of Bangladesh. It is known for its stunning natural beauty, including lush green tea gardens, crystal-clear streams, and vibrant wildlife. The town is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Sreemangal is also home to some of the best tea estates in Bangladesh, producing high-quality tea that is exported all over the world. The town is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "City",
+                  "category": "city",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -483,7 +483,7 @@
                   "location": "Sylhet, Bangladesh",
                   "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/fd/37/e9/bisnakandi.jpg?w=1200&h=1200&s=1",
                   "description": "Bisanakandi is a village located in the Sylhet division of Bangladesh. It is known for its stunning natural beauty, including crystal-clear waters, lush greenery, and vibrant wildlife. The village is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Bisanakandi is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The village is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "Village",
+                  "category": "village",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -494,7 +494,7 @@
                   "location": "Bangladesh",
                   "image": "https://www.bangladeshtravelandtours.com/wp-content/uploads/2023/04/30.jpg",
                   "description": "Bandarban is a district located in the southeastern part of Bangladesh. It is known for its stunning natural beauty, including lush green hills, crystal-clear streams, and vibrant wildlife. The district is a popular tourist destination and is known for its trekking trails, wildlife sanctuaries, and waterfalls. Bandarban is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The district is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "Village",
+                  "category": "village",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -505,7 +505,7 @@
                   "location": "Bangladesh",
                   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCmUnysdBFxZ3si20tNS7YXPsg7fbSyvM-r_aSpfORblMbo9Fq1mNGjRB2yeqOy5qlDr-GZQdUcH1KysPeLqmK6QWaS4dqmMp-XUqHSPhZTR3ofsipf_4bGOUAE5w682cPhPlMQWFtK93u0E3imyBU3_sOrjfe3cGhWMZrbfruNX2DuKCqjoUMPEQyXg/w1200-h630-p-k-no-nu/Kuakata_SeaBeach.jpg",
                   "description": "Kuakata is a seaside town located in the southwestern part of Bangladesh. It is known for its stunning white-sand beaches, crystal-clear waters, and vibrant marine life. The town is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Kuakata is also home to some of the best seafood restaurants in Bangladesh, serving up fresh fish, crab, and lobster. The town is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "Seaside town",
+                  "category": "beach",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -516,7 +516,7 @@
                   "location": "Bangladesh",
                   "image": "https://pbs.twimg.com/media/Csn00bFUIAAcTHE.jpg:large",
                   "description": "Inani Beach is a sea beach located in Ukhia Upazila of Cox's Bazar District, Bangladesh. It is known for its stunning natural beauty, including crystal-clear waters, lush greenery, and vibrant wildlife. The beach is a popular tourist destination and is known for its water sports, including scuba diving, snorkeling, and kayaking. Inani Beach is a must-visit destination for anyone traveling to Bangladesh.",
-                  "category": "Beach",
+                  "category": "beach",
                   "country": "Bangladesh",
                   "trending": false
                 },
@@ -527,7 +527,7 @@
                   "location": "New York City, United States",
                   "image": "https://www.worldatlas.com/upload/f4/d8/7b/shutterstock-1397031029.jpg",
                   "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. It was gifted by the French to the American people in 1896. The statue is a figure of Libertas, the Roman goddess of liberty. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata JULY IV MDCCLXXVI (July 4, 1776, in Roman numerals), the date of the U.S. Declaration of Independence. A broken chain and shackle lie at her feet as she walks forward, commemorating the national abolition of slavery after the American Civil War. The statue became an icon of freedom and of the United States, being subsequently seen as a symbol of welcome to immigrants arriving. ",
-                  "category": "Monument",
+                  "category": "monument",
                   "country": "United States",
                   "trending": false
                 },
@@ -538,7 +538,7 @@
                   "location": "San Francisco, United States",
                   "image": "https://assets.editorial.aetnd.com/uploads/2015/02/topic-golden-gate-bridge-gettyimages-177770941.jpg",
                   "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. It was opened to the public in 1937 and has undergone various retrofits and other improvement projects in the decades since. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers. ",
-                  "category": "Monument",
+                  "category": "monument",
                   "country": "United States",
                   "trending": false
                 },
@@ -549,7 +549,7 @@
                   "location": "Alberta, Canada",
                   "image": "https://cdn-bijab.nitrocdn.com/JYZgWzrAokXCsuvoBxWxmuaaXSDKcyls/assets/images/optimized/rev-a413bca/gotraveltipster.com/wp-content/uploads/2019/08/banff-national-park-amp.jpg",
                   "description": "Banff National Park is Canada's oldest national park, established in 1885 in the Rocky Mountains. The park, located 110–180 kilometres (68–112 mi) west of Calgary in the province of Alberta, encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with numerous glaciers and ice fields, dense coniferous forest, and alpine landscapes. The Icefields Parkway extends from Lake Louise, connecting to Jasper National Park in the north. Provincial forests and Yoho National Park are neighbours to the west, while Kootenay National Park is located to the south and Kananaskis Country to the southeast. The main commercial centre of the park is the town of Banff, in the Bow River valley. ",
-                  "category": "National Park",
+                  "category": "national-park",
                   "country": "Canada",
                   "trending": false
                 },
@@ -560,7 +560,7 @@
                   "location": "Alberta, Canada",
                   "image": "https://mediaim.expedia.com/destination/1/b5ef71d06097b7d8e4fa9ef2c5db29e1.jpg",
                   "description": "Lake Louise is a glacial lake within Banff National Park in Alberta, Canada. It is located 5 km (3.1 mi) west of the Hamlet of Lake Louise and the Trans-Canada Highway (Highway 1). The lake is named after Princess Louise Caroline Alberta (1848–1939), the fourth daughter of Queen Victoria and the wife of the Marquess of Lorne, who was the Governor General of Canada from 1878 to 1883. The turquoise color of the water comes from rock flour carried into the lake by melt-water from the glaciers that overlook the lake. The lake has a surface area of 0.8 km2 (0.31 sq mi) and is drained through the 3 km long Louise Creek into the Bow River. ",
-                  "category": "Lake",
+                  "category": "lake",
                   "country": "Canada",
                   "trending": false
                 },{
@@ -570,7 +570,7 @@
                   "location": "Appenzell Innerrhoden, Switzerland",
                   "image": "https://peakvisor.com/img/news/Appenzell-Innerrhoden-Santis-in-front.jpg",
                   "description": "Appenzell District is a district of the canton of Appenzell Innerrhoden in Switzerland. It has a population of 5,793 (as of December 2020 [^1^][25]). The area of Appenzell is 16.88 km² (7 sq mi) [^1^][25]. The district of Appenzell consists of a part of the village Appenzell, as well as Rinkenbach, Kau and Meistersrüte [^1^][25].",
-                  "category": "Village",
+                  "category": "village",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -581,7 +581,7 @@
                   "location": "Zurich, Switzerland",
                   "image": "https://switzerland-tour.com/storage/media/Zurich/Zurich-City.jpg",
                   "description": "Zurich is the largest city in Switzerland and the capital of the canton of Zurich. It is located in north-central Switzerland, at the northwestern tip of Lake Zurich. As of January 2023 the municipality had 443,037 inhabitants, the urban area 1.315 million (2009), and the Zurich metropolitan area 1.83 million (2011) [^2^][11]. Zurich is a hub for railways, roads, and air traffic. Both Zurich Airport and Zurich's main railway station are the largest and busiest in the country. Zurich is home to many financial institutions and banking companies [^3^][12].",
-                  "category": "City",
+                  "category": "city",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -592,7 +592,7 @@
                   "location": "Obwalden, Switzerland",
                   "image": "https://static.toiimg.com/thumb/57667447.cms?resizemode=75&width=1200&height=900",
                   "description": "Engelberg is a village resort and a municipality in the canton of Obwalden in Switzerland. Alongside the central village of Engelberg, the municipality encompasses additional settlements, including Grafenort, Oberberg and Schwand [^4^][15]. Engelberg is a mountain resort in Central Switzerland. In the Middle Ages, the area garnered recognition for its Benedictine monastery, known as Engelberg Abbey. As time progressed, particularly from the 19th century onwards, Engelberg became a well-known mountain resort [^5^][17].",
-                  "category": "Village",
+                  "category": "village",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -603,7 +603,7 @@
                   "location": "Bern, Switzerland",
                   "image": "https://images.squarespace-cdn.com/content/v1/5c4645722714e56a73cc0554/1606946237872-1TH4KP8VK091G3K45BNM/Thun+Switzerland+Travel.jpg",
                   "description": "Interlaken is a town in the Bern canton of central Switzerland. It lies along the Aare River, in the Bernese Highlands. Its name is derived from its position on the flat plain (Bödeli), 1,864 feet (568 m) above sea level, between Lakes Brienz to the east and Thun to the west [^6^][22]. Interlaken is an important and well-known tourist destination in the Bernese Oberland region of the Swiss Alps, and the main transport gateway to the mountains and lakes of that region [^7^][21].",
-                  "category": "Village",
+                  "category": "village",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -614,7 +614,7 @@
                   "location": "Central Switzerland",
                   "image": "https://i0.wp.com/scubadiverlife.com/wp-content/uploads/2018/01/bigstock-Village-Weggis-Lake-Lucerne-138207653.jpg?w=1166&h=778&ssl=1",
                   "description": "Lake Lucerne (German: Vierwaldstättersee, literally 'Lake of the four forested settlements' (in English usually translated as forest cantons), French: lac des Quatre-Cantons, Italian: lago dei Quattro Cantoni) is a lake in central Switzerland and the fourth largest in the country. The lake has a complicated shape, with several sharp bends and four arms. It starts in the south–north bound Reuss Valley between steep cliffs above the Urnersee from Flüelen towards Brunnen to the north before it makes a sharp bend to the west where it continues into the Gersauer Becken. Here is also the deepest point of the lake with 214 m (702 ft). Even further west of it is the Buochser Bucht, but the lake sharply turns north again through the narrow opening between the Unter Nas (lower nose) of the Bürgenstock to the west and the Ober Nas (upper nose) of the Rigi to the east to reach the Vitznauer Bucht. In front of Vitznau below the Rigi the lake turns sharply west again to reach the center of a four-arm cross, called the Chrütztrichter (Cross Funnel). Here converge the Vitznauer Bucht with the Küssnachtersee from the north, the Luzernersee from the west, and the Horwer Bucht and the Stanser Trichter to the south, which is to be found right below the northeast side of the Pilatus and the west side of the Bürgenstock. At the very narrow pass between the east dropper of the Pilatus (called Lopper) and Stansstad the lake reaches its southwestern arm at Alpnachstad on the steep southern foothills of the Pilatus, the Alpnachersee. The lake drains its water into the Reuss in Lucerne from its arm called Luzernersee (which literally translates as Lake of Lucerne).",
-                  "category": "Lake",
+                  "category": "lake",
                   "country": "Switzerland",
                   "trending": false
                 },
@@ -625,7 +625,7 @@
                   "location": "Switzerland, France",
                   "image": "https://cdn.audleytravel.com/4990/3566/79/15985940-lake-geneva-region.jpg",
                   "description": "Lake Geneva, also known as Vierwaldstättersee in German, is one of the major lakes located in Switzerland. It is situated within the cantons of Lucerne, Uri, Schwyz, Obwalden, and Nidwalden. The lake is fed by several rivers, including the Reuss, the Muota, the Engelberger Aa, and the Sarner Aa. Sixty per cent (345.31 km2 or 133.32 sq mi) of the lake belongs to Switzerland (the cantons of Vaud, Geneva and Valais) and forty per cent (234.71 km2 or 90.62 sq mi) to France (the department of Haute-Savoie).",
-                  "category": "Lake",
+                  "category": "lake",
                   "country": "Switzerland, France",
                   "trending": false
                 },
@@ -636,8 +636,8 @@
                   "location": "Canterbury, New Zealand",
                   "image": "https://inafarawayland.com/wp-content/uploads/2022/10/Winter-Mount-Cook-National-Park-4-1024x683.jpg",
                   "description": "Aoraki/Mount Cook National Park is a rugged land of ice and rock, with 19 peaks over 3,000 metres including New Zealand's highest mountain, Aoraki/Mount Cook. Located in the Canterbury region, the park encompasses 70,696 hectares of stunning alpine scenery. The park is home to the Tasman Glacier, the longest glacier in New Zealand, and the Tasman Lake, which was formed by the retreat of the glacier. The park is also home to a variety of flora and fauna, including the kea, the world's only alpine parrot. The park is a popular destination for mountaineers, hikers, and skiers.",
-                  "category": "National Park",
-                  "country": "New Zealand",
+                  "category": "national-park",
+                  "country": "New-Zealand",
                   "trending": false
                 },
                 
@@ -648,7 +648,7 @@
                       "location": "Jasper National Park, Canada",
                       "image": "https://www.thenexttrip.xyz/wp-content/uploads/2021/02/Pyramid-Island-on-Pyramid-Lake-in-Jasper-scaled.jpg",
                       "description": "Pyramid Lake is a kidney-shaped lake located in Jasper National Park, Alberta, Canada. It lies at the foot of Pyramid Mountain, a natural landmark that overlooks the town of Jasper. The lake has a total area of 1.2 km² (0.46 sq mi) and discharges into the Athabasca River through the 2 km (1.2 mi) long Pyramid Creek 1. The lake is surrounded by snow-capped mountains and is known for its crystal clear waters. Visitors can enjoy a variety of outdoor activities in the area, including hiking, fishing, and kayaking 2. Several picnic sites are established on the shores of the lake, as well as boat ramps. Pyramid Lake Lodge is located on the southeast point of the lake. Pyramid Island is a short distance from the resort, there is a small parking area which can be accessed by a road or hiking trails, then you cross a small wood foot bridge to the island itself, which has benches, picnic tables and a small open wooden shelter 1. Pyramid Lake is connected to the town of Jasper by Pyramid Lake Road and hiking trails, as well as hiking trails to other tourist sites such as Pyramid Mountain, Patricia Lake and Cabin Lake. In summary, Pyramid Lake is a beautiful glacial lake located in Jasper National Park, Canada. It is known for its crystal clear waters, snow-capped mountains, and a variety of outdoor activities that visitors can enjoy. The lake is surrounded by several picnic sites and boat ramps, and Pyramid Island is a short distance from the resort. Pyramid Lake is connected to the town of Jasper by Pyramid Lake Road and hiking trails, as well as hiking trails to other tourist sites such as Pyramid Mountain, Patricia Lake, and Cabin Lake.",
-                      "category": "Lake",
+                      "category": "lake",
                       "country": "Canada",
                       "trending":false
                   },
@@ -659,8 +659,8 @@
                       "location": "Southwest of New Zealand's South Island",
                       "image": "https://www.milford-sound.co.nz/wp-content/uploads/2022/11/visiting-milford-sound-in-summer.jpg",
                       "description": "Milford Sound is a fjord located in the southwest of New Zealand’s South Island within Fiordland National Park, Piopiotahi (Milford Sound) Marine Reserve, and the Te Wahipounamu World Heritage site. The sound is about 2 miles wide and extends inland for 12 miles 12. The sound was created when the sea flooded a glacial valley over millions of years. The sound is surrounded by sheer rock faces that rise 1,200 meters or more on either side. Among the peaks are The Elephant at 1,517 meters and The Lion, 1,302 meters, in the shape of a crouching lion. Milford Sound sports two permanent waterfalls, Lady Bowen Falls and Stirling Falls 1. The sound is most commonly accessed via road (State Highway 94) by tour coach, with the road terminating at a small village also called Milford Sound. The village and fiord are one of the most visited places in New Zealand, receiving about one million day visitors per year. Visitors can enjoy a variety of outdoor activities in the area, including hiking, kayaking, and scenic flights. In summary, Milford Sound is a stunning fjord located in the southwest of New Zealand’s South Island. It is surrounded by sheer rock faces, towering peaks, and two permanent waterfalls. Visitors can enjoy a variety of outdoor activities in the area, including hiking, kayaking, and scenic flights. The village and fiord are one of the most visited places in New Zealand, receiving about one million day visitors per year",
-                      "category": "National Park",
-                      "country": "New Zealand",
+                      "category": "national-park",
+                      "country": "New-Zealand",
                       "trending":false
                   },
                   {
@@ -670,8 +670,8 @@
                       "location": "North Island, New Zealand",
                       "image": "https://travel.usnews.com/images/Glowworm_Caves_Marcel_Strelow_Getty.jpg",
                       "description": "Waitomo Glowworm Caves are a network of underground caves located in New Zealand's North Island. The caves are home to thousands of glowworms, which create a magical, starry effect on the cave walls. Visitors can explore the caves on guided tours, which include boat rides and walks through the cave system.",
-                      "category": "Mountain",
-                      "country": "New Zealand",
+                      "category": "mountain",
+                      "country": "New-Zealand",
                       "trending":true
                   },
                   {
@@ -681,8 +681,8 @@
                       "location": "Westland Tai Poutini National Park, New Zealand",
                       "image": "https://cdn.kimkim.com/files/a/images/4b2df2a8f0f8e495e9f325689ed49faf4f24b558/big-9c25312b17bc8f040004dd8388491c67.jpg",
                       "description": "Franz Josef Glacier is a glacier located in New Zealand's Westland Tai Poutini National Park. The glacier is known for its stunning blue ice and is a popular destination for hiking and ice climbing. Visitors can explore the glacier on guided tours, which include helicopter rides and walks on the glacier.",
-                      "category": "Glacier",
-                      "country": "New Zealand",
+                      "category": "glacier",
+                      "country": "New-Zealand",
                       "trending":false
                   },
                   {
@@ -692,8 +692,8 @@
                       "location": "North Island, New Zealand",
                       "image": "https://lp-cms-production.imgix.net/features/2017/05/NZ2-aee15d042985.jpg?auto=format&q=75&w=1920",
                       "description": "Piha is a beach located on New Zealand's North Island. It is known for its black sand and rugged coastline, which make it a popular destination for surfers and hikers. Visitors can enjoy a variety of outdoor activities in the area, including surfing, hiking, and exploring the nearby Waitakere Ranges Regional Park.",
-                      "category": "Beach",
-                      "country": "New Zealand",
+                      "category": "beach",
+                      "country": "New-Zealand",
                       "trending":false
                   },
                   {
@@ -703,8 +703,8 @@
                       "location": "Southern Alps, New Zealand",
                       "image": "https://lh5.googleusercontent.com/p/AF1QipOHF7XorcgjXEIYL2CulrM638rznSG9lH3ryy7n=w675-h390-n-k-no",
                       "description": "Wanaka is a town located in New Zealand's Southern Alps. It is known for its stunning natural beauty, including Lake Wanaka and the surrounding mountains. Visitors can enjoy a variety of outdoor activities in the area, including hiking, skiing, and mountain biking.",
-                      "category": "Mountain",
-                      "country": "New Zealand",
+                      "category": "mountain",
+                      "country": "New-Zealand",
                       "trending":false
                   }
               
