@@ -30,7 +30,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="">
-          <Link to="/">
+          <Link to="/login">
             <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
           </Link>
         </div>

@@ -5,6 +5,7 @@ import CountryPage from "../Pages/CountryPage/CountryPage";
 import CategoryPage from "../Pages/CategoryPage/CategoryPage";
 import BlogPage from "../Pages/BlogPage/BlogPage";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import LoginPage from "../Pages/LoginPage/LoginPage";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "/categories",
         element: <CategoryPage></CategoryPage>,
+      },
+      {
+        path: "/login",
+        element: <LoginPage></LoginPage>,
       },
     ],
   },
