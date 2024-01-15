@@ -8,7 +8,7 @@ const CardForPage = ({ details }) => {
 
   return (
     <div className=" relative h-[260px]  main  cursor-pointer my-5">
-      <Link to={`/categories/${name}`}>
+      <Link to={name ? `/categories/${name}` : `/countries/${title}`}>
         <img
           className="h-full w-full object-cover  rounded-lg mb-3"
           src={image}

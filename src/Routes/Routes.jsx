@@ -8,6 +8,7 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import SingleBlogPage from "../Pages/SingleBlogPage/SingleBlogPage";
 import SingleCategoryPage from "../Pages/SingleCategoryPage/SingleCategoryPage";
+import SingleCountryPage from "../Pages/SingleCountryPage/SingleCountryPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,13 @@ export const router = createBrowserRouter([
         path: "/countries",
         element: <CountryPage></CountryPage>,
       },
+      {
+        path: "/countries/:country",
+        element: <SingleCountryPage></SingleCountryPage>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/blogs/${params.country}`),
+      },
+
       {
         path: "/categories",
         element: <CategoryPage></CategoryPage>,
