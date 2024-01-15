@@ -3,10 +3,11 @@ import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import UseCountries from "../../Hooks/UseCountries/UseCountries";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
+import CardForPage from "../../Shared/CardForPage/CardForPage";
 import Navbar from "../Home/Navbar/Navbar";
 
 const CountryPage = () => {
-  const countrySection = UseCountries();
+  const [countries] = UseCountries();
 
   const details = {
     image:
@@ -22,7 +23,13 @@ const CountryPage = () => {
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Countries You would love to visit"></SectionTitle>
-      <div className="mb-[5%]">{countrySection}</div>
+      <div className="mb-[5%]">
+        <div className="grid gap-x-16 gap-y-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+          {countries.map((country) => (
+            <CardForPage key={country?.id} details={country}></CardForPage>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
