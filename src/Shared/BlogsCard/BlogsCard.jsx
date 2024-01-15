@@ -8,7 +8,7 @@ const BlogsCard = ({ place }) => {
   const { _id, image, placeName, location, description, category, country } =
     place;
   return (
-    <div className=" mb-[3%]">
+    <div className=" mb-[5%]">
       <img className="h-[280px] my-3 rounded-lg" src={image} alt={placeName} />
       <p className="text-gray-700 font-bold text-2xl text-center mb-2">
         {placeName}
