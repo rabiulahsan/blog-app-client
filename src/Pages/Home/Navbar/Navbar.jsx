@@ -6,6 +6,7 @@ import useAuth from "../../../Hooks/UseAuth/UseAuth";
 
 const Navbar = () => {
   const { logOut, user } = useAuth();
+  console.log(user);
 
   const handleLogOut = () => {
     logOut()
@@ -38,7 +39,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="flex items-center gap-x-5">
+          <img className="h-[40px] rounded-[50%]" src={user?.photoURL} alt="" />
           {user ? (
             <p onClick={handleLogOut}>
               <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
