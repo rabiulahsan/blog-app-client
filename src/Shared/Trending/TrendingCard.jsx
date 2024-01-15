@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "./Card.css";
-const Card = ({ place }) => {
+const TrendingCard = ({ place }) => {
   // console.log(place);
 
   const handleClick = () => {
@@ -35,4 +35,4 @@ const Card = ({ place }) => {
   );
 };
 
-export default Card;
+export default TrendingCard;

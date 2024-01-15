@@ -5,9 +5,11 @@ import "./CardForPage.css";
 const CardForPage = ({ details }) => {
   // console.log(details);
   const { image, title, name, countryName } = details;
+  // name for url
+  // title for display
 
   return (
-    <div className=" relative h-[260px]  main  cursor-pointer my-5">
+    <div className=" relative h-[240px]  main  cursor-pointer my-5">
       {/* created dynamic link for category and country page  */}
       <Link to={name ? `/categories/${name}` : `/countries/${countryName}`}>
         <img

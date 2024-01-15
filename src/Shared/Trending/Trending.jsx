@@ -1,7 +1,8 @@
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
-import Card from "../Card/Card";
+
+import TrendingCard from "./TrendingCard";
 
 const Trending = () => {
   //get all the blogs data
@@ -22,7 +23,7 @@ const Trending = () => {
         {/* this id for skeleton */}
         {isLoading && <SkeletonCard number={16}></SkeletonCard>}
         {trendingPlaces.map((place) => (
-          <Card key={place?._id} place={place}></Card>
+          <TrendingCard key={place?._id} place={place}></TrendingCard>
         ))}
       </div>
     </div>

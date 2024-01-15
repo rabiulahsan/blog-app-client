@@ -8,7 +8,7 @@ const BlogsCard = ({ place }) => {
   const { _id, image, placeName, location, description, category, country } =
     place;
   return (
-    <div>
+    <div className=" mb-[3%]">
       <img className="h-[280px] my-3 rounded-lg" src={image} alt={placeName} />
       <p className="text-gray-700 font-bold text-2xl text-center mb-2">
         {placeName}
@@ -19,7 +19,7 @@ const BlogsCard = ({ place }) => {
         <p>{country}</p>
       </div>
       <p className="text-center">{description.slice(0, 120) + "..."}</p>
-      <div className="flex justify-center items-center my-3">
+      <div className="flex justify-center items-center mt-3">
         <Link to={`/${_id}`}>
           <HoverOverlayButton btnName="Read More"></HoverOverlayButton>
         </Link>
