@@ -15,7 +15,7 @@ const BlogPage = () => {
     name: "Blogs",
   };
   return (
-    <div>
+    <div className="mb-[5%]">
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Blogs"></PageTitle>
       <Navbar></Navbar>

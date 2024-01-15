@@ -1,6 +1,7 @@
 import PageTitle from "../../../Components/PageTitle/PageTitle";
 // import Footer from "../../../Shared/Footer/Footer";
 import Trending from "../../../Shared/Trending/Trending";
+import About from "../About/About";
 import Banner from "../Banner/Banner";
 import Beauty from "../Beauty/Beauty";
 import BlogSection from "../BlogSection/BlogSection";
@@ -28,6 +29,7 @@ const Home = () => {
       <BlogSection></BlogSection>
       <CategorySection></CategorySection>
       <Trending></Trending>
+      <About></About>
       {/* <Footer></Footer> */}
     </div>
   );
