@@ -6,6 +6,7 @@ import CategoryPage from "../Pages/CategoryPage/CategoryPage";
 import BlogPage from "../Pages/BlogPage/BlogPage";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
+import SingleBlogPage from "../Pages/SingleBlogPage/SingleBlogPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <BlogPage></BlogPage>,
+      },
+      {
+        path: "/:id",
+        element: <SingleBlogPage></SingleBlogPage>,
+        loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
       },
       {
         path: "/countries",

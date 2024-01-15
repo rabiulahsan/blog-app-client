@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import HoverOverlayButton from "../../Components/HoverOverlayButton/HoverOverlayButton";
 
 /* eslint-disable react/prop-types */
 const BlogsCard = ({ place }) => {
   // console.log(place);
 
-  const { image, placeName, location, description, category, country } = place;
+  const { _id, image, placeName, location, description, category, country } =
+    place;
   return (
     <div>
       <img className="h-[280px] my-3 rounded-lg" src={image} alt={placeName} />
@@ -18,7 +20,9 @@ const BlogsCard = ({ place }) => {
       </div>
       <p className="text-center">{description.slice(0, 120) + "..."}</p>
       <div className="flex justify-center items-center my-3">
-        <HoverOverlayButton btnName="Read More"></HoverOverlayButton>
+        <Link to={`${_id}`}>
+          <HoverOverlayButton btnName="Read More"></HoverOverlayButton>
+        </Link>
       </div>
     </div>
   );

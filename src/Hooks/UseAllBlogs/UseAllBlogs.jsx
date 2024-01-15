@@ -5,7 +5,7 @@ const UseAllBlogs = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/blogs.json")
+    fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => {
         setAllBlogs(data);
