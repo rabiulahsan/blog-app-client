@@ -5,7 +5,7 @@ import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOver
 import useAuth from "../../../Hooks/UseAuth/UseAuth";
 
 const Navbar = () => {
-  const { logOut } = useAuth();
+  const { logOut, user } = useAuth();
 
   const handleLogOut = () => {
     logOut()
@@ -39,12 +39,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="">
-          <Link to="/login">
-            <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
-          </Link>
-          <p onClick={handleLogOut}>
-            <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
-          </p>
+          {user ? (
+            <p onClick={handleLogOut}>
+              <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
+            </p>
+          ) : (
+            <Link to="/login">
+              <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
+            </Link>
+          )}
         </div>
       </div>
     </div>

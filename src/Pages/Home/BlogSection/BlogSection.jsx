@@ -4,7 +4,7 @@ import BlogsCard from "../../../Shared/BlogsCard/BlogsCard";
 
 const BlogSection = () => {
   const [allBlogs] = UseAllBlogs();
-  console.log(allBlogs);
+  // console.log(allBlogs);
 
   // console.log(trendingPlaces);
   return (
