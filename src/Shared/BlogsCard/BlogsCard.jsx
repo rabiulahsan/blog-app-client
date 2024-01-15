@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import HoverOverlayButton from "../../Components/HoverOverlayButton/HoverOverlayButton";
 
 /* eslint-disable react/prop-types */
 const BlogsCard = ({ place }) => {
@@ -18,9 +18,7 @@ const BlogsCard = ({ place }) => {
       </div>
       <p className="text-center">{description.slice(0, 120) + "..."}</p>
       <div className="flex justify-center items-center">
-        <button className="orange-small-btn my-3 ">
-          <Link>Read More</Link>
-        </button>
+        <HoverOverlayButton btnName="Read More"></HoverOverlayButton>
       </div>
     </div>
   );
