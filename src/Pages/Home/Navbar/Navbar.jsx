@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ActiveLink from "../../../Components/ActiveLink/ActiveLink";
 import "./Navbar.css";
 import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
@@ -7,10 +7,11 @@ import useAuth from "../../../Hooks/UseAuth/UseAuth";
 const Navbar = () => {
   const { logOut, user } = useAuth();
   // console.log(user);
+  const navigate = useNavigate();
 
   const handleLogOut = () => {
     logOut()
-      .then()
+      .then(navigate("/"))
       .catch((error) => console.log(error));
   };
 

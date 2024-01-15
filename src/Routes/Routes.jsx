@@ -9,6 +9,8 @@ import LoginPage from "../Pages/LoginPage/LoginPage";
 import SingleBlogPage from "../Pages/SingleBlogPage/SingleBlogPage";
 import SingleCategoryPage from "../Pages/SingleCategoryPage/SingleCategoryPage";
 import SingleCountryPage from "../Pages/SingleCountryPage/SingleCountryPage";
+import PrivateRoute from "./PrivateRoute";
+import FavoritesPage from "../Pages/FavoritesPage/FavoritesPage";
 
 export const router = createBrowserRouter([
   {
@@ -56,7 +58,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/favourites",
-        element: <LoginPage></LoginPage>,
+        element: (
+          <PrivateRoute>
+            <FavoritesPage></FavoritesPage>
+          </PrivateRoute>
+        ),
       },
     ],
   },
