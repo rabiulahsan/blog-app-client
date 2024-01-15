@@ -20,7 +20,7 @@ const SingleCountryPage = () => {
 
   //getting all current countries blogs
   const currentCountryBlogs = allBlogs?.filter(
-    (blog) => blog?.country.lowercase() === currentCountry
+    (blog) => blog?.country.toLowerCase() === currentCountry
   );
   console.log(currentCountryBlogs);
 

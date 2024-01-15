@@ -8,27 +8,27 @@ import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 const SingleCategoryPage = () => {
   //getting current category name
   const currentCountry = useParams().category;
-  console.log(currentCountry);
+  // console.log(currentCountry);
 
   //getting all blogs
   const [allBlogs] = UseAllBlogs();
-  console.log(allBlogs);
+  // console.log(allBlogs);
 
   // getting all categories
   const [categories] = UseCategories();
-  console.log(categories);
+  // console.log(categories);
 
   //getting all current categories blogs
   const currentCategoryBlogs = allBlogs?.filter(
     (blog) => blog?.category === currentCountry
   );
-  console.log(currentCategoryBlogs);
+  // console.log(currentCategoryBlogs);
 
   //getting deatils of current category for page banner
   const currentCategoryDetails = categories?.filter(
     (category) => category?.name === currentCountry
   );
-  console.log(currentCategoryDetails);
+  // console.log(currentCategoryDetails);
 
   return (
     <div>
