@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "./Banner.css";
+import FadeAnimations from "../../../Shared/FadeAnimations/FadeAnimations";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -65,7 +66,7 @@ const Banner = () => {
           alt=""
         />
         <div className=" absolute  top-0 left-0 flex items-center  bg-gradient-to-r from-[rgba(0,0,0,.9)] to-[rgba(0,0,0,0.1)] h-full  w-full pl-[8%]">
-          <div>
+          <FadeAnimations delay={0.5} direction="right">
             <p className="text-7xl text-orange-500 font-semibold ">
               {findPlace[0]?.title}
             </p>
@@ -81,45 +82,50 @@ const Banner = () => {
             >
               <span className="relative z-10">Explorer</span>
             </button>
-          </div>
+          </FadeAnimations>
         </div>
       </div>
       <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
-        <Slider
-          {...settings}
-          ref={sliderRef}
-          className="cursor-pointer  w-[700px]"
-        >
-          {allPlaces.map((place) => (
-            <div key={place?.id} className="">
-              <img
-                className={`${
-                  place?.id === activeIndex ? "border-4 border-orange-400" : ""
-                } !w-[160px] h-[230px] object-cover  rounded-lg`}
-                src={place?.imageURL}
-                alt=""
-              />
-            </div>
-          ))}
-        </Slider>
-        <div className="flex justify-start places-center gap-6 my-5">
-          <button
-            onClick={() => sliderRef.current.slickPrev()}
-            className="previous "
+        <FadeAnimations delay={0.5} direction="left">
+          <Slider
+            {...settings}
+            ref={sliderRef}
+            className="cursor-pointer  w-[700px]"
           >
-            <p className="orange-btn ">
-              <AiOutlineLeft></AiOutlineLeft>
-            </p>
-          </button>
-          <button
-            onClick={() => sliderRef.current.slickNext()}
-            className="next "
-          >
-            <p className="orange-btn ">
-              <AiOutlineRight></AiOutlineRight>
-            </p>
-          </button>
-        </div>
+            {allPlaces.map((place) => (
+              <div key={place?.id} className="">
+                <img
+                  className={`${
+                    place?.id === activeIndex
+                      ? "border-4 border-orange-400"
+                      : ""
+                  } !w-[160px] h-[230px] object-cover  rounded-lg`}
+                  src={place?.imageURL}
+                  alt=""
+                />
+              </div>
+            ))}
+          </Slider>
+
+          <div className="flex justify-start places-center gap-6 my-5">
+            <button
+              onClick={() => sliderRef.current.slickPrev()}
+              className="previous "
+            >
+              <p className="orange-btn ">
+                <AiOutlineLeft></AiOutlineLeft>
+              </p>
+            </button>
+            <button
+              onClick={() => sliderRef.current.slickNext()}
+              className="next "
+            >
+              <p className="orange-btn ">
+                <AiOutlineRight></AiOutlineRight>
+              </p>
+            </button>
+          </div>
+        </FadeAnimations>
       </div>
     </div>
   );
