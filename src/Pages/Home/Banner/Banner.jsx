@@ -66,7 +66,7 @@ const Banner = () => {
           alt=""
         />
         <div className=" absolute  top-0 left-0 flex items-center  bg-gradient-to-r from-[rgba(0,0,0,.9)] to-[rgba(0,0,0,0.1)] h-full  w-full pl-[8%]">
-          <FadeAnimations delay={0.5} direction="right">
+          <FadeAnimations delay={0.5} direction="right" once={false}>
             <p className="text-7xl text-orange-500 font-semibold ">
               {findPlace[0]?.title}
             </p>
@@ -86,7 +86,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
-        <FadeAnimations delay={0.5} direction="left">
+        <FadeAnimations delay={0.5} direction="left" once={false}>
           <Slider
             {...settings}
             ref={sliderRef}

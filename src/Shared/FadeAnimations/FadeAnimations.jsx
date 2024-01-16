@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 
-const FadeAnimations = ({ direction, children, delay }) => {
+const FadeAnimations = ({ direction, children, delay, once }) => {
   //   console.log(direction);
 
   const variants = {
@@ -22,7 +22,7 @@ const FadeAnimations = ({ direction, children, delay }) => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      viewport={{ once: false }}
+      viewport={{ once: once }}
     >
       {children}
     </motion.div>
