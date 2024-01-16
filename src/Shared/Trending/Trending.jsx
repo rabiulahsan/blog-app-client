@@ -1,6 +1,7 @@
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
+import StaggerAnimation from "../StaggerAnimation/StaggerAnimation";
 
 import TrendingCard from "./TrendingCard";
 
@@ -18,14 +19,22 @@ const Trending = () => {
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Trending Places"}></SectionTitle>
 
-      {/* this is for specific place card  */}
+      {/* for skeleton  */}
       <div className="grid gap-x-12 gap-y-20 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
-        {/* this id for skeleton */}
-        {isLoading && <SkeletonCard number={16}></SkeletonCard>}
-        {trendingPlaces.map((place) => (
-          <TrendingCard key={place?._id} place={place}></TrendingCard>
-        ))}
+        {isLoading && <SkeletonCard number={10}></SkeletonCard>}
       </div>
+
+      {/* this is for animation */}
+      <StaggerAnimation delayChildren={0.2} staggerChildren={0.3}>
+        {/* this is for specific place card  */}
+        <div className="grid gap-x-12 gap-y-20 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+          {/* this id for skeleton */}
+
+          {trendingPlaces.map((place) => (
+            <TrendingCard key={place?._id} place={place}></TrendingCard>
+          ))}
+        </div>
+      </StaggerAnimation>
     </div>
   );
 };

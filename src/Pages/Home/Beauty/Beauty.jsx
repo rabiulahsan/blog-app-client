@@ -11,8 +11,9 @@ const Beauty = () => {
       {/* sectiontitle recieved the props and apply a design.  */}
       <SectionTitle heading={"Find the Natures Beauty"}></SectionTitle>
 
-      {/* this is for specific country card  */}
+      {/* this is for  animation  */}
       <StaggerAnimation delayChildren={0.2} staggerChildren={0.3}>
+        {/* this is for specific country card  */}
         <div className="grid gap-x-16 gap-y-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
           {countries.map((country) => (
             <CardForPage key={country?.id} details={country}></CardForPage>

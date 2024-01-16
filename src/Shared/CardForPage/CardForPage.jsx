@@ -9,6 +9,7 @@ const CardForPage = ({ details }) => {
   // name for url
   // title for display
 
+  // this is for animation
   const items = {
     initial: {
       y: "100",
@@ -22,7 +23,6 @@ const CardForPage = ({ details }) => {
 
   return (
     <motion.div variants={items}>
-      {/* <FadeAnimations direction="up" delay={0.3} once={true}> */}
       <div className=" relative h-[240px]  main  cursor-pointer my-5">
         {/* created dynamic link for category and country page  */}
         <Link to={name ? `/categories/${name}` : `/countries/${countryName}`}>
@@ -44,8 +44,6 @@ const CardForPage = ({ details }) => {
           </div>
         </Link>
       </div>
-
-      {/* </FadeAnimations> */}
     </motion.div>
   );
 };
