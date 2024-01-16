@@ -2,6 +2,7 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 // import useAuth from "../../Hooks/UseAuth/UseAuth";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
+import ScollToTop from "../../Components/ScrollToTop/ScrollToTop";
 
 const FavoritesPage = () => {
   //   const { user } = useAuth();
@@ -13,6 +14,7 @@ const FavoritesPage = () => {
   };
   return (
     <div>
+      <ScollToTop></ScollToTop>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Your Next Adventure Awaits!"></SectionTitle>

@@ -5,6 +5,7 @@ import PageBanner from "../../Shared/PageBanner/PageBanner";
 import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
+import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 
 const SingleCategoryPage = () => {
   //getting current category name
@@ -33,6 +34,7 @@ const SingleCategoryPage = () => {
 
   return (
     <div>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <PageBanner details={currentCategoryDetails[0]}></PageBanner>
 
