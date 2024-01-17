@@ -5,12 +5,13 @@ import Navbar from "../Home/Navbar/Navbar";
 import ScollToTop from "../../Components/ScrollToTop/ScrollToTop";
 import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
-import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
+import BlogsCardFavourite from "../../Shared/BlogsCard/BlogsCardFavourite";
+// import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 
 const FavoritesPage = () => {
   //   const { user } = useAuth();
   const [favouriteData, isLoading] = UseFavourite();
-  console.log(favouriteData);
+  // console.log(favouriteData);
 
   const details = {
     image:
@@ -28,7 +29,11 @@ const FavoritesPage = () => {
       {isLoading && <SkeletonCard number={10}></SkeletonCard>}
       <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
         {favouriteData?.map((data) => (
-          <BlogsCard key={data._id} place={data}></BlogsCard>
+          <BlogsCardFavourite
+            key={data?._id}
+            place={data}
+            isLoading={isLoading}
+          ></BlogsCardFavourite>
         ))}
       </div>
     </div>

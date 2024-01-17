@@ -5,7 +5,7 @@ import useAuth from "../UseAuth/UseAuth";
 const UseFavourite = () => {
   const { user } = useAuth();
   const [axiosSecure] = UseAxiosSecure();
-  const [favouriteData, setFavouriteData] = useState(null);
+  const [favouriteData, setFavouriteData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const UseFavourite = () => {
     fetchFavouriteData();
   }, [axiosSecure, user?.email]);
 
-  // console.log(favouriteData);
+  console.log(favouriteData);
   return [favouriteData, isLoading];
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useLoaderData } from "react-router-dom";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
@@ -7,7 +8,8 @@ import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
 import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import Swal from "sweetalert2";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
 
 const SingleBlogPage = () => {
   //get the for specific this id which is given in router.jsx
@@ -25,12 +27,24 @@ const SingleBlogPage = () => {
     category,
     country,
   } = loadedData;
-  // console.log(loadedData);
+  console.log(loadedData);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await axiosSecure.get(
+        `/favourites?email=${user?.email}`
+      );
+      const savedData = response.data.filter((data) => data.blogsID === _id);
+      setIsLike(savedData.some((data) => data.saved));
+    };
+
+    fetchData();
+  }, [_id, user, axiosSecure]);
 
   //create object for pagebanner section
   const details = {
-    image,
-    title: placeName,
+    image: loadedData?.image,
+    title: loadedData?.placeName,
   };
 
   // for swal notification
@@ -93,41 +107,49 @@ const SingleBlogPage = () => {
       <PageBanner details={details}></PageBanner>
       <div className="my-[3%] flex  justify-center items-center ">
         <div className="w-1/2">
-          <img className="h-[450px] w-full mx-auto " src={image} alt="" />
+          <img
+            className="h-[450px] w-full mx-auto "
+            src={loadedData?.image}
+            alt=""
+          />
           <div className="flex justify-between items-center px-[5%] mt-3">
             <div className="flex gap-x-10 text-orange-500 text-sm ">
               <p>{category}</p>
               <p>{location}</p>
               <p>{country}</p>
             </div>
-            <div className="text-red-600">
-              {isLike ? (
-                <span
-                  onClick={handleFavouriteDelete}
-                  className="text-2xl font-bold cursor-pointer"
-                  title="Add on Favorite"
-                >
-                  <FaHeart></FaHeart>
-                </span>
-              ) : (
-                <span
-                  onClick={handleFavourite}
-                  className="text-2xl font-bold cursor-pointer"
-                  title="Add on Favorite"
-                >
-                  <FaRegHeart></FaRegHeart>
-                </span>
-              )}
-            </div>
+            {user ? (
+              <div className="text-red-600">
+                {isLike ? (
+                  <span
+                    onClick={handleFavouriteDelete}
+                    className="text-2xl font-bold cursor-pointer"
+                    title="Add on Favorite"
+                  >
+                    <FaHeart></FaHeart>
+                  </span>
+                ) : (
+                  <span
+                    onClick={handleFavourite}
+                    className="text-2xl font-bold cursor-pointer"
+                    title="Add on Favorite"
+                  >
+                    <FaRegHeart></FaRegHeart>
+                  </span>
+                )}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
           <p className="mt-[3%] mb-[1%] text-center text-4xl font-bold text-gray-700">
-            {placeName}
+            {loadedData?.placeName}
           </p>
-          <p className="text-center text-gray-700">By {writer}</p>
+          <p className="text-center text-gray-700">By {loadedData?.writer}</p>
         </div>
       </div>
       <p className="px-[12%] w-2/3 text-lg text-gray-600 text-center mx-auto leading-10">
-        {description}
+        {loadedData?.description}
       </p>
       <Trending></Trending>
     </div>
