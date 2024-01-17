@@ -10,27 +10,27 @@ import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
 const SingleCountryPage = () => {
   //getting current country name
   const currentCountry = useParams().country;
-  console.log(currentCountry);
+  // console.log(currentCountry);
 
   //getting all blogs
   const [allBlogs, isLoading] = UseAllBlogs();
-  console.log(allBlogs);
+  // console.log(allBlogs);
 
   // getting all countries
   const [countries] = UseCountries();
-  console.log(countries);
+  // console.log(countries);
 
   //getting all current countries blogs
   const currentCountryBlogs = allBlogs?.filter(
     (blog) => blog?.country.toLowerCase() === currentCountry
   );
-  console.log(currentCountryBlogs);
+  // console.log(currentCountryBlogs);
 
   //getting deatils of current country for page banner
   const currentCountryDetails = countries?.filter(
     (country) => country?.countryName === currentCountry
   );
-  console.log(currentCountryDetails);
+  // console.log(currentCountryDetails);
 
   return (
     <div>

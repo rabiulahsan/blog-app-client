@@ -5,7 +5,6 @@ import UseCountries from "../../Hooks/UseCountries/UseCountries";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import CardForPage from "../../Shared/CardForPage/CardForPage";
 import Navbar from "../Home/Navbar/Navbar";
-import StaggerAnimation from "../../Shared/StaggerAnimation/StaggerAnimation";
 
 const CountryPage = () => {
   const [countries] = UseCountries();
@@ -27,13 +26,11 @@ const CountryPage = () => {
       {/* this is for animation  */}
       <SectionTitle heading="Countries You would love to visit"></SectionTitle>
       <div className="mb-[5%]">
-        <StaggerAnimation delayChildren={0.2} staggerChildren={0.3}>
-          <div className="grid gap-x-16 gap-y-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
-            {countries.map((country) => (
-              <CardForPage key={country?.id} details={country}></CardForPage>
-            ))}
-          </div>
-        </StaggerAnimation>
+        <div className="grid gap-x-16 gap-y-16 grid-cols-1 lg:grid-cols-4 px-[10%]  ">
+          {countries.map((country) => (
+            <CardForPage key={country?.id} details={country}></CardForPage>
+          ))}
+        </div>
       </div>
     </div>
   );
