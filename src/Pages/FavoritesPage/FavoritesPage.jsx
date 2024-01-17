@@ -11,7 +11,7 @@ import BlogsCardFavourite from "../../Shared/BlogsCard/BlogsCardFavourite";
 const FavoritesPage = () => {
   //   const { user } = useAuth();
   const [favouriteData, isLoading] = UseFavourite();
-  // console.log(favouriteData);
+  console.log(favouriteData[0]);
 
   const details = {
     image:
@@ -25,17 +25,19 @@ const FavoritesPage = () => {
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Your Next Adventure Awaits!"></SectionTitle>
-      {/* this id for skeleton */}
-      {isLoading && <SkeletonCard number={10}></SkeletonCard>}
-      <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
-        {favouriteData?.map((data) => (
-          <BlogsCardFavourite
-            key={data?._id}
-            place={data}
-            isLoading={isLoading}
-          ></BlogsCardFavourite>
-        ))}
-      </div>
+      {/* this is for skeleton */}
+      {isLoading || favouriteData.length === 0 ? (
+        <SkeletonCard number={10}></SkeletonCard>
+      ) : (
+        <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+          {favouriteData.map((data) => (
+            <BlogsCardFavourite
+              key={data?._id}
+              place={data}
+            ></BlogsCardFavourite>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

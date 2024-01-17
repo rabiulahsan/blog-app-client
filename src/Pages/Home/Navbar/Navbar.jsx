@@ -53,7 +53,7 @@ const Navbar = () => {
             </p>
           ) : (
             <Link to="/login">
-              <HoverOverlayButton btnName="Become Writer?"></HoverOverlayButton>
+              <HoverOverlayButton btnName="Join Us"></HoverOverlayButton>
             </Link>
           )}
         </div>

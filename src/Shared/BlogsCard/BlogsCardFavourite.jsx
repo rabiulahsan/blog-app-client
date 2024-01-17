@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import HoverOverlayButton from "../../Components/HoverOverlayButton/HoverOverlayButton";
 import FadeAnimations from "../FadeAnimations/FadeAnimations";
-import { useEffect, useState } from "react";
 
 /* eslint-disable react/prop-types */
 
 const BlogsCardFavourite = ({ place }) => {
-  console.log(place?.blogID);
-
-  const { blogID, image, placeName, location, description, category, country } =
-    place;
+  const {
+    blogsID,
+    image,
+    placeName,
+    location,
+    description,
+    category,
+    country,
+  } = place;
+  console.log(blogsID);
 
   return (
     <FadeAnimations direction="up" once={true} delay={0.4} duration={0.4}>
@@ -27,9 +32,9 @@ const BlogsCardFavourite = ({ place }) => {
           <p>{location}</p>
           <p>{country}</p>
         </div>
-        {/* <p className="text-center">{description.slice(0, 120) + "..."}</p> */}
+        <p className="text-center">{description.slice(0, 120) + "..."}</p>
         <div className="flex justify-center items-center mt-3">
-          <Link to={`/${place?.blogID}`}>
+          <Link to={`/${place?.blogsID}`}>
             <HoverOverlayButton btnName="Read More" />
           </Link>
         </div>

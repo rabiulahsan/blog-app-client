@@ -25,7 +25,7 @@ const UseFavourite = () => {
     fetchFavouriteData();
   }, [axiosSecure, user?.email]);
 
-  console.log(favouriteData);
+  // console.log(favouriteData);
   return [favouriteData, isLoading];
 };
 
