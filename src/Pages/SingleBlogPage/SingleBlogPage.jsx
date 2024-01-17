@@ -49,8 +49,15 @@ const SingleBlogPage = () => {
   //for posting the saved data to database
   const handleFavourite = () => {
     const savedData = {
-      userEmail: user?.email,
+      savesUserEmail: user?.email,
       blogsID: _id,
+      image,
+      placeName,
+      location,
+      description,
+      category,
+      country,
+      saved: true,
     };
     // console.log(savedData);
     axiosSecure.post("/favourites", savedData).then((data) => {
