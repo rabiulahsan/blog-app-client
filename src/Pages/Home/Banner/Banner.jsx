@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "./Banner.css";
 import FadeAnimations from "../../../Shared/FadeAnimations/FadeAnimations";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -85,7 +86,9 @@ const Banner = () => {
               style={buttonStyles}
               className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
             >
-              <span className="relative z-10">Explorer</span>
+              <Link to="/blogs">
+                <span className="relative z-10">Explorer</span>
+              </Link>
             </button>
           </FadeAnimations>
         </div>
