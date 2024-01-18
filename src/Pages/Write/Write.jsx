@@ -75,16 +75,18 @@ const Write = () => {
                 <span className="label-text font-semibold">Location</span>
               </label>
               <input
-                readOnly
                 type="text"
                 placeholder="Location"
                 {...register("location", { required: true, maxLength: 30 })}
                 className="input-style"
               />
+              {errors.location && (
+                <span className="text-red-600">Location is required</span>
+              )}
             </div>
 
             {/* category */}
-            <div className="form-control w-1/2 max-w-xs">
+            <div className="form-control w-full max-w-xs">
               <label className="label block text-gray-700 text-sm font-bold">
                 <span className="label-text font-semibold">
                   Select Category
@@ -95,7 +97,7 @@ const Write = () => {
                   {...register("category", { required: true })}
                   className="select select-bordered text-black"
                 >
-                  <option disabled selected>
+                  <option disabled selected value="">
                     Select Category
                   </option>
                   <option value="hike">Hike</option>
@@ -112,7 +114,7 @@ const Write = () => {
                   <option value="mountain">Mountain</option>
                 </select>
                 {errors.category && (
-                  <span className="text-red-600">
+                  <span className="text-red-600 text-sm">
                     Category need to be selected
                   </span>
                 )}
@@ -141,18 +143,33 @@ const Write = () => {
                 <span className="label-text font-semibold">Country</span>
               </label>
               <input
-                readOnly
                 type="text"
                 placeholder="Country"
                 {...register("country", { required: true, maxLength: 30 })}
                 className="input-style"
               />
+              {errors.country && (
+                <span className="text-red-600">Country is required</span>
+              )}
+            </div>
+            <div className="form-control w-full mb-4">
+              <label className="label block text-gray-700 text-sm font-bold">
+                <span className="label-text font-semibold">Description</span>
+              </label>
+              <textarea
+                className="textarea textarea-bordered input-style"
+                placeholder="Description"
+                {...register("description", { required: true })}
+              ></textarea>
+              {errors.description && (
+                <span className="text-red-600">Description is required</span>
+              )}
             </div>
           </div>
           <input
             className="bg-blue-700  py-2 px-6 text-white font-semibold cursor-pointer rounded hover:bg-blue-800 absolute bottom-[-15%] right-0"
             type="submit"
-            value="Add Class"
+            value="Add Blog"
           />
         </form>
       </div>
