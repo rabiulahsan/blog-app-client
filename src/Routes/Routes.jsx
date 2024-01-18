@@ -11,6 +11,7 @@ import SingleCategoryPage from "../Pages/SingleCategoryPage/SingleCategoryPage";
 import SingleCountryPage from "../Pages/SingleCountryPage/SingleCountryPage";
 import PrivateRoute from "./PrivateRoute";
 import FavoritesPage from "../Pages/FavoritesPage/FavoritesPage";
+import SearchPage from "../Pages/SearchPage/SearchPage";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ export const router = createBrowserRouter([
         path: "/:id",
         element: <SingleBlogPage></SingleBlogPage>,
         loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
+      },
+      {
+        path: "/search",
+        element: <SearchPage></SearchPage>,
+        // loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
       },
       {
         path: "/countries",

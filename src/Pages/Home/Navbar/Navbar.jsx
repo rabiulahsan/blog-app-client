@@ -66,7 +66,9 @@ const Navbar = () => {
               className="bg-orange-500 p-3 cursor-pointer rounded-r"
               onClick={handleSearch}
             >
-              <FaSearch></FaSearch>
+              <Link to="/search">
+                <FaSearch></FaSearch>
+              </Link>
             </button>
           </div>
 
