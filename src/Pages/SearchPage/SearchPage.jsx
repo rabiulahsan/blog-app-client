@@ -5,6 +5,8 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import { useParams } from "react-router-dom";
+import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
+import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 
 const SearchPage = () => {
   const [searchresult, setSearchResult] = useState([]);
@@ -43,7 +45,18 @@ const SearchPage = () => {
       <Navbar currentSearch={searchValue}></Navbar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Search Results"></SectionTitle>
-      <p>search page</p>
+      {/* this is for skeleton */}
+      {searchresult.length === 0 ? (
+        <div className=""></div>
+      ) : (
+        <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+          {/* this id for skeleton */}
+          {isLoading && <SkeletonCard number={16}></SkeletonCard>}
+          {searchresult?.map((data) => (
+            <BlogsCard key={data?._id} place={data}></BlogsCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
