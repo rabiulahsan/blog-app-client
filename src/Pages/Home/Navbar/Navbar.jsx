@@ -4,11 +4,18 @@ import "./Navbar.css";
 import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
 import useAuth from "../../../Hooks/UseAuth/UseAuth";
 import { FaSearch } from "react-icons/fa";
+import { useState } from "react";
 
 const Navbar = () => {
   const { logOut, user } = useAuth();
   // console.log(user);
   const navigate = useNavigate();
+
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleSearch = () => {
+    console.log("Search Value:", searchValue);
+  };
 
   const handleLogOut = () => {
     logOut()
@@ -52,8 +59,13 @@ const Navbar = () => {
               type="text"
               placeholder="search"
               className=" border border-orange-500 px-3 py-[7px] bg-transparent rounded-l focus:outline-none"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button className="bg-orange-500 p-3 cursor-pointer rounded-r">
+            <button
+              className="bg-orange-500 p-3 cursor-pointer rounded-r"
+              onClick={handleSearch}
+            >
               <FaSearch></FaSearch>
             </button>
           </div>
