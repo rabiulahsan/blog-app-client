@@ -16,3 +16,23 @@ li {
     
     width: 100%;
 }
+
+
+/* for button hover effect */
+.button::before {
+    content: "";
+    position: absolute;
+    top: var(--before-top);
+    left: var(--before-left);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgb(50, 47, 75);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+  }  
+   .button:hover::before {
+    cursor: pointer;
+    height: 400px;
+    width: 400px;
+  }

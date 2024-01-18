@@ -8,6 +8,10 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  if (user) {
+    navigate("/");
+  }
+
   const from = location.state?.from?.pathname || "/";
 
   const handleGoogleSignIn = () => {
