@@ -6,6 +6,7 @@ import PageBanner from "../../Shared/PageBanner/PageBanner";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 const SingleCountryPage = () => {
   //getting current country name
@@ -35,6 +36,7 @@ const SingleCountryPage = () => {
   return (
     <div>
       <ScrollToTop></ScrollToTop>
+      <PageTitle pageDescription={currentCountry}></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={currentCountryDetails[0]}></PageBanner>
 

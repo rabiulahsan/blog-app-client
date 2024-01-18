@@ -10,6 +10,7 @@ import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
 import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 const SingleBlogPage = () => {
   //get the for specific this id which is given in router.jsx
@@ -103,6 +104,7 @@ const SingleBlogPage = () => {
     <div>
       {/* this is for scroll to top after coming this page  */}
       <ScrollToTop></ScrollToTop>
+      <PageTitle pageDescription={placeName}></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={details}></PageBanner>
       <div className="my-[3%] flex  justify-center items-center ">

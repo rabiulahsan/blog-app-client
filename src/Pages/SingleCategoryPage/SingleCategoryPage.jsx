@@ -6,10 +6,11 @@ import UseAllBlogs from "../../Hooks/UseAllBlogs/UseAllBlogs";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 const SingleCategoryPage = () => {
   //getting current category name
-  const currentCountry = useParams().category;
+  const currentCategory = useParams().category;
   // console.log(currentCountry);
 
   //getting all blogs
@@ -22,19 +23,20 @@ const SingleCategoryPage = () => {
 
   //getting all current categories blogs
   const currentCategoryBlogs = allBlogs?.filter(
-    (blog) => blog?.category === currentCountry
+    (blog) => blog?.category === currentCategory
   );
   // console.log(currentCategoryBlogs);
 
   //getting deatils of current category for page banner
   const currentCategoryDetails = categories?.filter(
-    (category) => category?.name === currentCountry
+    (category) => category?.name === currentCategory
   );
   // console.log(currentCategoryDetails);
 
   return (
     <div>
       <ScrollToTop></ScrollToTop>
+      <PageTitle pageDescription={currentCategory}></PageTitle>
       <Navbar></Navbar>
       <PageBanner details={currentCategoryDetails[0]}></PageBanner>
 

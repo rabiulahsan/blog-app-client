@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
             <li className="navlink-hover">
               <span>
-                <ActiveLink to="/categories">Categoires</ActiveLink>
+                <ActiveLink to="/categories">Categories</ActiveLink>
               </span>
             </li>
             <li className="navlink-hover">
