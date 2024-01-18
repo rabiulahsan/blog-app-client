@@ -3,6 +3,7 @@ import ActiveLink from "../../../Components/ActiveLink/ActiveLink";
 import "./Navbar.css";
 import HoverOverlayButton from "../../../Components/HoverOverlayButton/HoverOverlayButton";
 import useAuth from "../../../Hooks/UseAuth/UseAuth";
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
   const { logOut, user } = useAuth();
@@ -45,12 +46,29 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-x-5">
-          <img className="h-[40px] rounded-[50%]" src={user?.photoURL} alt="" />
+        <div className="flex items-center gap-x-4">
+          <div className="flex items-center">
+            <input
+              type="text"
+              placeholder="search"
+              className=" border border-orange-500 px-3 py-[7px] bg-transparent rounded-l focus:outline-none"
+            />
+            <button className="bg-orange-500 p-3 cursor-pointer rounded-r">
+              <FaSearch></FaSearch>
+            </button>
+          </div>
+
           {user ? (
-            <p onClick={handleLogOut}>
-              <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
-            </p>
+            <>
+              <img
+                className="h-[40px] rounded-[50%]"
+                src={user?.photoURL}
+                alt=""
+              />
+              <p onClick={handleLogOut}>
+                <HoverOverlayButton btnName="Logout"></HoverOverlayButton>
+              </p>
+            </>
           ) : (
             <Link to="/login">
               <HoverOverlayButton btnName="Join Us"></HoverOverlayButton>
