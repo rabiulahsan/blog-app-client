@@ -6,21 +6,47 @@ import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
-import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Write = () => {
   const [axiosSecure] = UseAxiosSecure();
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm();
 
   const { user } = useAuth();
 
+  // for swal notification
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-right",
+    showConfirmButton: false,
+    timer: 6000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    },
+  });
+
   const onSubmit = (data) => {
-    console.log(data);
+    const newBlog = {
+      ...data,
+      email: user?.email,
+    };
+    console.log(newBlog);
+    axiosSecure.post("/blogs", newBlog).then((data) => {
+      if (data.data.insertedId) {
+        reset();
+        Toast.fire({
+          icon: "success",
+          title: "New blogs create successfully",
+        });
+      }
+    });
   };
 
   //for pagebanner
