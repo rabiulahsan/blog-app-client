@@ -6,6 +6,7 @@ import Navbar from "../Home/Navbar/Navbar";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import ScrollToTop from "../../Components/ScrollToTop/ScrollToTop";
+import ScrollProgressBar from "../../Components/ScrollProgressBar/ScrollProgressBar";
 
 const BlogPage = () => {
   //getting all blogs data
@@ -22,6 +23,7 @@ const BlogPage = () => {
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Blogs"></PageTitle>
       <Navbar></Navbar>
+      <ScrollProgressBar></ScrollProgressBar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Know about your Destination"></SectionTitle>
       <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">

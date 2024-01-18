@@ -7,6 +7,7 @@ import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import BlogsCardFavourite from "../../Shared/BlogsCard/BlogsCardFavourite";
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import ScrollProgressBar from "../../Components/ScrollProgressBar/ScrollProgressBar";
 // import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 
 const FavoritesPage = () => {
@@ -26,6 +27,7 @@ const FavoritesPage = () => {
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Favourites"></PageTitle>
       <Navbar></Navbar>
+      <ScrollProgressBar></ScrollProgressBar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Your Next Adventure Awaits!"></SectionTitle>
       {/* this is for skeleton */}

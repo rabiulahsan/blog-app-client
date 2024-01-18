@@ -9,6 +9,7 @@ import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 import FadeAnimations from "../../Shared/FadeAnimations/FadeAnimations";
 import { Player } from "@lottiefiles/react-lottie-player";
+import ScrollProgressBar from "../../Components/ScrollProgressBar/ScrollProgressBar";
 
 const SearchPage = () => {
   const [searchresult, setSearchResult] = useState([]);
@@ -45,6 +46,7 @@ const SearchPage = () => {
       <ScrollToTop></ScrollToTop>
       <PageTitle pageDescription="Search"></PageTitle>
       <Navbar></Navbar>
+      <ScrollProgressBar></ScrollProgressBar>
       {searchresult.length === 0 ? (
         ""
       ) : (

@@ -11,6 +11,7 @@ import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
 import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import ScrollProgressBar from "../../Components/ScrollProgressBar/ScrollProgressBar";
 
 const SingleBlogPage = () => {
   //get the for specific this id which is given in router.jsx
@@ -106,6 +107,7 @@ const SingleBlogPage = () => {
       <ScrollToTop></ScrollToTop>
       <PageTitle pageDescription={placeName}></PageTitle>
       <Navbar></Navbar>
+      <ScrollProgressBar></ScrollProgressBar>
       <PageBanner details={details}></PageBanner>
       <div className="my-[3%] flex  justify-center items-center ">
         <div className="w-1/2">
