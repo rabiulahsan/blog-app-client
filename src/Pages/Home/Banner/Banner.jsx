@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  //it is for explore button
   const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     const x = e.pageX - e.currentTarget.offsetLeft;
@@ -52,11 +53,9 @@ const Banner = () => {
   }, []);
 
   useEffect(() => {
-    // console.log("allPlaces:", allPlaces);
     const place = allPlaces.filter((places) => places.id === activeIndex);
     setfindPlace(place);
   }, [activeIndex, allPlaces]);
-  //   console.log(findPlace);
 
   return (
     <div className="relative h-screen">

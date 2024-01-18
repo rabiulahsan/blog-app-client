@@ -37,7 +37,7 @@ const Navbar = () => {
           <p className="text-3xl text-orange-500 font-extrabold">Explorer</p>
         </Link>
         <div className="">
-          <ul className="flex text-lg font-semibold">
+          <ul className="flex text-[17px] font-semibold">
             <li className="navlink-hover">
               <span>
                 <ActiveLink to="/blogs">Blogs</ActiveLink>
@@ -56,6 +56,11 @@ const Navbar = () => {
             <li className="navlink-hover">
               <span>
                 <ActiveLink to="/favourites">Favourites</ActiveLink>
+              </span>
+            </li>
+            <li className="navlink-hover">
+              <span>
+                <ActiveLink to="/write">Write</ActiveLink>
               </span>
             </li>
           </ul>

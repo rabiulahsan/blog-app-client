@@ -12,6 +12,7 @@ import SingleCountryPage from "../Pages/SingleCountryPage/SingleCountryPage";
 import PrivateRoute from "./PrivateRoute";
 import FavoritesPage from "../Pages/FavoritesPage/FavoritesPage";
 import SearchPage from "../Pages/SearchPage/SearchPage";
+import Write from "../Pages/Write/Write";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +63,14 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <FavoritesPage></FavoritesPage>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/write",
+        element: (
+          <PrivateRoute>
+            <Write></Write>
           </PrivateRoute>
         ),
       },
