@@ -7,6 +7,8 @@ import Navbar from "../Home/Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
+import FadeAnimations from "../../Shared/FadeAnimations/FadeAnimations";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const SearchPage = () => {
   const [searchresult, setSearchResult] = useState([]);
@@ -43,11 +45,35 @@ const SearchPage = () => {
       <ScrollToTop></ScrollToTop>
       <PageTitle pageDescription="Search"></PageTitle>
       <Navbar currentSearch={searchValue}></Navbar>
-      <PageBanner details={details}></PageBanner>
-      <SectionTitle heading="Search Results"></SectionTitle>
-      {/* this is for skeleton */}
       {searchresult.length === 0 ? (
-        <div className=""></div>
+        ""
+      ) : (
+        <>
+          <PageBanner details={details}></PageBanner>
+          <SectionTitle heading="Search Results"></SectionTitle>
+        </>
+      )}
+
+      {searchresult.length === 0 ? (
+        <div className="pt-[10%] mb-[5%]">
+          <FadeAnimations
+            direction="down"
+            once={false}
+            delay={0.3}
+            duration={0.5}
+          >
+            <Player
+              className="h-[300px] "
+              autoplay
+              loop
+              src="/empty.json"
+            ></Player>
+          </FadeAnimations>
+
+          <p className="text-2xl font-bold text-center mt-[3%]">
+            Didn&apos;t find anything
+          </p>
+        </div>
       ) : (
         <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
           {/* this id for skeleton */}

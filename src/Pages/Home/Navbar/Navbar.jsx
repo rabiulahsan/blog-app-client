@@ -60,7 +60,7 @@ const Navbar = ({ currentSearch }) => {
               onChange={(e) => setSearchValue(e.target.value)}
             />
             <button className="bg-orange-500 p-3 cursor-pointer rounded-r">
-              <Link to={`/search/${searchValue}`}>
+              <Link to={`/search/${searchValue ? searchValue : currentSearch}`}>
                 <FaSearch></FaSearch>
               </Link>
             </button>
