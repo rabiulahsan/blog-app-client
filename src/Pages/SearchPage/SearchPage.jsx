@@ -18,7 +18,7 @@ const SearchPage = () => {
   // console.log(searchValue);
 
   useEffect(() => {
-    const fetchFavouriteData = async () => {
+    const fetchSearchData = async () => {
       try {
         await fetch(`http://localhost:5000/search?value=${searchValue}`)
           .then((res) => res.json())
@@ -32,7 +32,7 @@ const SearchPage = () => {
     };
 
     // Fetch the data when the component mounts
-    fetchFavouriteData();
+    fetchSearchData();
   }, [searchValue]);
   // console.log(searchresult);
 

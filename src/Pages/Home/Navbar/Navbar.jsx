@@ -63,6 +63,11 @@ const Navbar = () => {
                 <ActiveLink to="/write">Write</ActiveLink>
               </span>
             </li>
+            <li className="navlink-hover">
+              <span>
+                <ActiveLink to="/myblogs">My Blogs</ActiveLink>
+              </span>
+            </li>
           </ul>
         </div>
         <div className="flex items-center gap-x-4">
