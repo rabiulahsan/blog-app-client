@@ -33,7 +33,7 @@ const SearchPage = () => {
     // Fetch the data when the component mounts
     fetchFavouriteData();
   }, [searchValue]);
-  console.log(searchresult);
+  // console.log(searchresult);
 
   const details = {
     image:
@@ -44,7 +44,7 @@ const SearchPage = () => {
     <div>
       <ScrollToTop></ScrollToTop>
       <PageTitle pageDescription="Search"></PageTitle>
-      <Navbar currentSearch={searchValue}></Navbar>
+      <Navbar></Navbar>
       {searchresult.length === 0 ? (
         ""
       ) : (
@@ -76,8 +76,12 @@ const SearchPage = () => {
         </div>
       ) : (
         <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
-          {/* this id for skeleton */}
-          {isLoading && <SkeletonCard number={16}></SkeletonCard>}
+          {/* this is for skeleton */}
+          {isLoading || searchresult.length === 0 ? (
+            <SkeletonCard number={16}></SkeletonCard>
+          ) : (
+            ""
+          )}
           {searchresult?.map((data) => (
             <BlogsCard key={data?._id} place={data}></BlogsCard>
           ))}

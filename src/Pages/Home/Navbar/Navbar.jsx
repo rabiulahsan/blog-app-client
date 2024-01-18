@@ -7,13 +7,23 @@ import useAuth from "../../../Hooks/UseAuth/UseAuth";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
-const Navbar = ({ currentSearch }) => {
+const Navbar = () => {
   const { logOut, user } = useAuth();
   // console.log(user);
   const navigate = useNavigate();
 
   const [searchValue, setSearchValue] = useState("");
 
+  //if searchvalue is empty then return nothing
+  const handleSearch = () => {
+    if (searchValue) {
+      navigate(`/search/${searchValue}`);
+    } else {
+      return;
+    }
+  };
+
+  // functon for logout
   const handleLogOut = () => {
     logOut()
       .then(navigate("/"))
@@ -56,13 +66,14 @@ const Navbar = ({ currentSearch }) => {
               type="text"
               placeholder="search"
               className=" border border-orange-500 px-3 py-[7px] bg-transparent rounded-l focus:outline-none "
-              value={searchValue ? searchValue : currentSearch}
+              value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button className="bg-orange-500 p-3 cursor-pointer rounded-r">
-              <Link to={`/search/${searchValue ? searchValue : currentSearch}`}>
-                <FaSearch></FaSearch>
-              </Link>
+            <button
+              className="bg-orange-500 p-3 cursor-pointer rounded-r"
+              onClick={handleSearch}
+            >
+              <FaSearch></FaSearch>
             </button>
           </div>
 
