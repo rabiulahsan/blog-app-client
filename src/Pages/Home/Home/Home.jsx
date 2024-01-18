@@ -8,12 +8,9 @@ import BlogSection from "../BlogSection/BlogSection";
 import CategorySection from "../CategorySection/CategorySection";
 import Navbar from "../Navbar/Navbar";
 import ScrollToTop from "../../../Components/ScrollToTop/ScrollToTop";
-
-import { motion, useScroll, useSpring } from "framer-motion";
+import ScrollProgressBar from "../../../Components/ScrollProgressBar/ScrollProgressBar";
 
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress);
   return (
     <div>
       {/* this is for scroll to top after coming this page  */}
@@ -21,13 +18,10 @@ const Home = () => {
 
       {/* this is for title of the  page  */}
       <PageTitle pageDescription="Get Close to Nature"></PageTitle>
-
       <Navbar></Navbar>
+
       {/* it is for on scroll progress bar  */}
-      <motion.div
-        className="bg-orange-500 fixed w-full top-[64px] left-0 h-[4px] z-40"
-        style={{ scaleX, transformOrigin: "left" }}
-      ></motion.div>
+      <ScrollProgressBar></ScrollProgressBar>
       <Banner></Banner>
       <Beauty></Beauty>
       <BlogSection></BlogSection>
