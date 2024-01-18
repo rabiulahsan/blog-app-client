@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link, useNavigate } from "react-router-dom";
 import ActiveLink from "../../../Components/ActiveLink/ActiveLink";
 import "./Navbar.css";
@@ -6,16 +7,12 @@ import useAuth from "../../../Hooks/UseAuth/UseAuth";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ currentSearch }) => {
   const { logOut, user } = useAuth();
   // console.log(user);
   const navigate = useNavigate();
 
   const [searchValue, setSearchValue] = useState("");
-
-  const handleSearch = () => {
-    console.log("Search Value:", searchValue);
-  };
 
   const handleLogOut = () => {
     logOut()
@@ -58,15 +55,12 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="search"
-              className=" border border-orange-500 px-3 py-[7px] bg-transparent rounded-l focus:outline-none"
-              value={searchValue}
+              className=" border border-orange-500 px-3 py-[7px] bg-transparent rounded-l focus:outline-none "
+              value={searchValue ? searchValue : currentSearch}
               onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button
-              className="bg-orange-500 p-3 cursor-pointer rounded-r"
-              onClick={handleSearch}
-            >
-              <Link to="/search">
+            <button className="bg-orange-500 p-3 cursor-pointer rounded-r">
+              <Link to={`/search/${searchValue}`}>
                 <FaSearch></FaSearch>
               </Link>
             </button>

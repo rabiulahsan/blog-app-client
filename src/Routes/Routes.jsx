@@ -33,9 +33,8 @@ export const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
       },
       {
-        path: "/search",
+        path: "/search/:value",
         element: <SearchPage></SearchPage>,
-        // loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
       },
       {
         path: "/countries",
@@ -44,8 +43,6 @@ export const router = createBrowserRouter([
       {
         path: "/countries/:country",
         element: <SingleCountryPage></SingleCountryPage>,
-        // loader: ({ params }) =>
-        //   fetch(`http://localhost:5000/blogs/${params.country}`),
       },
 
       {
@@ -55,8 +52,6 @@ export const router = createBrowserRouter([
       {
         path: "/categories/:category",
         element: <SingleCategoryPage></SingleCategoryPage>,
-        // loader: ({ params }) =>
-        //   fetch(`http://localhost:5000/blogs/${params.category}`),
       },
       {
         path: "/login",
