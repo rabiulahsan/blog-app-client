@@ -8,6 +8,8 @@ import Navbar from "../Home/Navbar/Navbar";
 import { useEffect } from "react";
 import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
+import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
+import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
 
 const MyBlogPage = () => {
   const { user } = useAuth();
@@ -45,6 +47,17 @@ const MyBlogPage = () => {
       <ScrollProgressBar></ScrollProgressBar>
       <PageBanner details={details}></PageBanner>
       <SectionTitle heading="Blogs that I Discover"></SectionTitle>
+
+      {/* this is for skeleton */}
+      {isLoading || myBlogs.length === 0 ? (
+        <SkeletonCard number={10}></SkeletonCard>
+      ) : (
+        <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
+          {myBlogs?.map((data) => (
+            <BlogsCard key={data?._id} place={data}></BlogsCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
