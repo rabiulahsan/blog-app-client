@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute";
 import FavoritesPage from "../Pages/FavoritesPage/FavoritesPage";
 import SearchPage from "../Pages/SearchPage/SearchPage";
 import Write from "../Pages/Write/Write";
+import MyBlogPage from "../Pages/MyBlogPage/MyBlogPage";
 
 export const router = createBrowserRouter([
   {
@@ -71,6 +72,14 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Write></Write>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myblogs",
+        element: (
+          <PrivateRoute>
+            <MyBlogPage></MyBlogPage>
           </PrivateRoute>
         ),
       },
