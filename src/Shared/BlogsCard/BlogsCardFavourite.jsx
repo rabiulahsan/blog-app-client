@@ -10,7 +10,7 @@ const BlogsCardFavourite = ({ place }) => {
     image,
     placeName,
     location,
-    description,
+    // description,
     category,
     country,
   } = place;
@@ -32,7 +32,9 @@ const BlogsCardFavourite = ({ place }) => {
           <p>{location}</p>
           <p>{country}</p>
         </div>
-        <p className="text-center">{description.slice(0, 120) + "..."}</p>
+        <p className="text-center">
+          {place?.description.slice(0, 120) + "..."}
+        </p>
         <div className="flex justify-center items-center mt-3">
           <Link to={`/${place?.blogsID}`}>
             <HoverOverlayButton btnName="Read More" />

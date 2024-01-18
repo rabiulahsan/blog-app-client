@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import Trending from "../../Shared/Trending/Trending";
@@ -141,7 +141,9 @@ const SingleBlogPage = () => {
                 )}
               </div>
             ) : (
-              ""
+              <p className="text-gray-500 text-base font-semibold hover:underline hover:text-orange-400">
+                <Link to="/login">Login for save this blog</Link>
+              </p>
             )}
           </div>
           <p className="mt-[3%] mb-[1%] text-center text-4xl font-bold text-gray-700">
