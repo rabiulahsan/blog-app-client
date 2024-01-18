@@ -6,6 +6,7 @@ import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import PageBanner from "../../Shared/PageBanner/PageBanner";
 import Navbar from "../Home/Navbar/Navbar";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
+import { useState } from "react";
 
 const Write = () => {
   const [axiosSecure] = UseAxiosSecure();
@@ -167,7 +168,7 @@ const Write = () => {
             </div>
           </div>
           <input
-            className="bg-blue-700  py-2 px-6 text-white font-semibold cursor-pointer rounded hover:bg-blue-800 absolute bottom-[-15%] right-0"
+            className="orange-small-btn cursor-pointer font-bold absolute bottom-0 right-0"
             type="submit"
             value="Add Blog"
           />
