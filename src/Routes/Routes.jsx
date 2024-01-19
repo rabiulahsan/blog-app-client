@@ -33,7 +33,8 @@ export const router = createBrowserRouter([
       {
         path: "/:id",
         element: <SingleBlogPage></SingleBlogPage>,
-        loader: ({ params }) => fetch(`http://localhost:5000/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://blog-server-zeta-lac.vercel.app/${params.id}`),
       },
       {
         path: "/search/:value",

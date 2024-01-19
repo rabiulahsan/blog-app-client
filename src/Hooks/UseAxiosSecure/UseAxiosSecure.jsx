@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 //create BaseURL
 const axiosSecure = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://blog-server-zeta-lac.vercel.app",
 });
 const UseAxiosSecure = () => {
   const { logout } = useAuth();

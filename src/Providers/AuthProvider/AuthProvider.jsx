@@ -37,7 +37,7 @@ const AuthProvider = ({ children }) => {
       if (loggedUser) {
         //using axios for fetch
         axios
-          .post("http://localhost:5000/jwt", {
+          .post("https://blog-server-zeta-lac.vercel.app/jwt", {
             email: loggedUser.email,
           })
           .then((data) => {
