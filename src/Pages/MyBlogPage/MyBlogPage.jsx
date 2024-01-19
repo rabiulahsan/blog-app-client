@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
-import BlogsCard from "../../Shared/BlogsCard/BlogsCard";
+import MyBlogsCard from "./MyBlogsCard";
 
 const MyBlogPage = () => {
   const { user } = useAuth();
@@ -54,7 +54,7 @@ const MyBlogPage = () => {
       ) : (
         <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
           {myBlogs?.map((data) => (
-            <BlogsCard key={data?._id} place={data}></BlogsCard>
+            <MyBlogsCard key={data?._id} place={data}></MyBlogsCard>
           ))}
         </div>
       )}
