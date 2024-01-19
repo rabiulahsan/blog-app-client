@@ -49,7 +49,7 @@ const MyBlogsCard = ({ place, handleDelete }) => {
                 title="update"
                 className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300"
               >
-                <Link>
+                <Link to={`/update/${_id}`}>
                   <FaEdit></FaEdit>
                 </Link>
               </span>

@@ -14,6 +14,7 @@ import FavoritesPage from "../Pages/FavoritesPage/FavoritesPage";
 import SearchPage from "../Pages/SearchPage/SearchPage";
 import Write from "../Pages/Write/Write";
 import MyBlogPage from "../Pages/MyBlogPage/MyBlogPage";
+import UpdatePage from "../Pages/UpdatePage/UpdatePage";
 
 export const router = createBrowserRouter([
   {
@@ -80,6 +81,14 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyBlogPage></MyBlogPage>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/update/:id",
+        element: (
+          <PrivateRoute>
+            <UpdatePage></UpdatePage>
           </PrivateRoute>
         ),
       },
