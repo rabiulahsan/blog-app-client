@@ -10,6 +10,7 @@ import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
 import SkeletonCard from "../../Components/SkeletonCard/SkeletonCard";
 import MyBlogsCard from "./MyBlogsCard";
+import Swal from "sweetalert2";
 
 const MyBlogPage = () => {
   const { user } = useAuth();
@@ -39,6 +40,33 @@ const MyBlogPage = () => {
     title: "My Blogs",
   };
 
+  // for swal notification
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-right",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    },
+  });
+
+  // for delete the selected blog
+  const handleDelete = (id) => {
+    axiosSecure.delete(`/blogs/${id}`).then((data) => {
+      // console.log(data.data);
+      if (data.data.deletedCount) {
+        const remaining = myBlogs.filter((blog) => blog._id !== id);
+        setMyBlogs(remaining);
+        Toast.fire({
+          icon: "success",
+          title: "Blog deleted successfully",
+        });
+      }
+    });
+  };
   return (
     <div>
       <ScrollToTop></ScrollToTop>
@@ -54,7 +82,11 @@ const MyBlogPage = () => {
       ) : (
         <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
           {myBlogs?.map((data) => (
-            <MyBlogsCard key={data?._id} place={data}></MyBlogsCard>
+            <MyBlogsCard
+              key={data?._id}
+              place={data}
+              handleDelete={handleDelete}
+            ></MyBlogsCard>
           ))}
         </div>
       )}

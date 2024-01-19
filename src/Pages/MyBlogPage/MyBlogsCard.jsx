@@ -6,7 +6,7 @@ import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 
 /* eslint-disable react/prop-types */
-const MyBlogsCard = ({ place }) => {
+const MyBlogsCard = ({ place, handleDelete }) => {
   const { user } = useAuth();
   // console.log(place);
 
@@ -45,12 +45,19 @@ const MyBlogsCard = ({ place }) => {
 
           {user?.email === email ? (
             <>
-              <span className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300">
+              <span
+                title="update"
+                className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300"
+              >
                 <Link>
                   <FaEdit></FaEdit>
                 </Link>
               </span>
-              <span className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300">
+              <span
+                title="delete"
+                onClick={() => handleDelete(_id)}
+                className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300"
+              >
                 <Link>
                   <MdDelete></MdDelete>
                 </Link>
