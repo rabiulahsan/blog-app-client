@@ -6,7 +6,7 @@ const ErrorPage = () => {
       <div className="">
         <Player className="h-[350px] " autoplay loop src="/error.json"></Player>
         <p className="text-5xl font-extrabold text-orange-500 text-center">
-          404 ERROR
+          404 Page Not Found
         </p>
       </div>
     </div>

@@ -57,7 +57,7 @@ const Write = () => {
   };
 
   return (
-    <div>
+    <>
       <ScrollToTop></ScrollToTop>
       <PageTitle pageDescription="write"></PageTitle>
       <Navbar></Navbar>
@@ -200,7 +200,7 @@ const Write = () => {
           />
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "./Banner.css";
 import FadeAnimations from "../../../Shared/FadeAnimations/FadeAnimations";
 import { Link } from "react-router-dom";
+import SkeletonCard from "../../../Components/SkeletonCard/SkeletonCard";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,6 +42,7 @@ const Banner = () => {
 
   const [allPlaces, setallPlaces] = useState([]);
   const [findPlace, setfindPlace] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("places.json")
@@ -48,6 +50,7 @@ const Banner = () => {
       .then((data) => {
         setallPlaces(data);
         setActiveIndex(data.length > 0 ? data[0].id : 1);
+        setLoading(false);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -60,6 +63,11 @@ const Banner = () => {
   return (
     <div className="relative h-screen">
       <div className="relative h-screen">
+        {loading && (
+          <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-1 ">
+            <SkeletonCard number={1}></SkeletonCard>
+          </div>
+        )}
         <img
           className="h-full w-full object-cover"
           src={findPlace[0]?.imageURL}
