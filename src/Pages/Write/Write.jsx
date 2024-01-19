@@ -124,7 +124,7 @@ const Write = () => {
                   {...register("category", { required: true })}
                   className="select select-bordered text-black"
                 >
-                  <option disabled selected value="">
+                  <option selected value="">
                     Select Category
                   </option>
                   <option value="hike">Hike</option>

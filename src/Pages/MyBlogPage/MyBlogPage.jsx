@@ -55,18 +55,31 @@ const MyBlogPage = () => {
 
   // for delete the selected blog
   const handleDelete = (id) => {
-    axiosSecure.delete(`/blogs/${id}`).then((data) => {
-      // console.log(data.data);
-      if (data.data.deletedCount) {
-        const remaining = myBlogs.filter((blog) => blog._id !== id);
-        setMyBlogs(remaining);
-        Toast.fire({
-          icon: "success",
-          title: "Blog deleted successfully",
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/blogs/${id}`).then((data) => {
+          // console.log(data.data);
+          if (data.data.deletedCount) {
+            const remaining = myBlogs.filter((blog) => blog._id !== id);
+            setMyBlogs(remaining);
+            Toast.fire({
+              icon: "success",
+              title: "Blog deleted successfully",
+            });
+          }
         });
       }
     });
   };
+
   return (
     <div>
       <ScrollToTop></ScrollToTop>
