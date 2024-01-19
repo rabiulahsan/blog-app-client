@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/UseAuth/UseAuth";
 import FadeAnimations from "../../Shared/FadeAnimations/FadeAnimations";
 import HoverOverlayButton from "../../Components/HoverOverlayButton/HoverOverlayButton";
@@ -8,6 +8,7 @@ import { FaEdit } from "react-icons/fa";
 /* eslint-disable react/prop-types */
 const MyBlogsCard = ({ place, handleDelete }) => {
   const { user } = useAuth();
+  const navigate = useNavigate();
   // console.log(place);
 
   const {
@@ -47,20 +48,17 @@ const MyBlogsCard = ({ place, handleDelete }) => {
             <>
               <span
                 title="update"
+                onClick={() => navigate(`/update/${_id}`)}
                 className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300"
               >
-                <Link to={`/update/${_id}`}>
-                  <FaEdit></FaEdit>
-                </Link>
+                <FaEdit></FaEdit>
               </span>
               <span
                 title="delete"
                 onClick={() => handleDelete(_id)}
                 className="bg-[#322F4B] text-white text-lg font-semibold p-[11px] rounded cursor-pointer hover:bg-orange-500 duration-300"
               >
-                <Link>
-                  <MdDelete></MdDelete>
-                </Link>
+                <MdDelete></MdDelete>
               </span>
             </>
           ) : (

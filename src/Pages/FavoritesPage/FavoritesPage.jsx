@@ -32,7 +32,9 @@ const FavoritesPage = () => {
       <SectionTitle heading="Your Next Adventure Awaits!"></SectionTitle>
       {/* this is for skeleton */}
       {isLoading || favouriteData.length === 0 ? (
-        <SkeletonCard number={10}></SkeletonCard>
+        <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%] my-[5%]">
+          <SkeletonCard number={6}></SkeletonCard>
+        </div>
       ) : (
         <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-3 px-[10%]  ">
           {favouriteData.map((data) => (
