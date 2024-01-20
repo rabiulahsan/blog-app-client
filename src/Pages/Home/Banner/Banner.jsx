@@ -63,17 +63,17 @@ const Banner = () => {
   return (
     <div className="relative h-screen">
       <div className="relative h-screen">
-        {/* {isLoading ? (
+        {isLoading ? (
           <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-1 px-[10%] my-[5%]">
             <SkeletonCard number={1}></SkeletonCard>
           </div>
         ) : (
-          )} */}
-        <img
-          className="h-full w-full object-cover"
-          src={findPlace[0]?.imageURL}
-          alt=""
-        />
+          <img
+            className="h-full w-full object-cover"
+            src={findPlace[0]?.imageURL}
+            alt=""
+          />
+        )}
 
         {isLoading ? (
           <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-1 px-[10%] my-[5%]">
@@ -108,53 +108,55 @@ const Banner = () => {
           </div>
         )}
       </div>
-      <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
-        <FadeAnimations
-          delay={0.5}
-          direction="left"
-          once={false}
-          duration={0.7}
-        >
-          <Slider
-            {...settings}
-            ref={sliderRef}
-            className="cursor-pointer  w-[700px]"
+      {!isLoading && (
+        <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
+          <FadeAnimations
+            delay={0.5}
+            direction="left"
+            once={false}
+            duration={0.7}
           >
-            {allPlaces.map((place) => (
-              <div key={place?.id} className="">
-                <img
-                  className={`${
-                    place?.id === activeIndex
-                      ? "border-4 border-orange-400"
-                      : ""
-                  } !w-[160px] h-[230px] object-cover  rounded-lg`}
-                  src={place?.imageURL}
-                  alt=""
-                />
-              </div>
-            ))}
-          </Slider>
+            <Slider
+              {...settings}
+              ref={sliderRef}
+              className="cursor-pointer  w-[700px]"
+            >
+              {allPlaces.map((place) => (
+                <div key={place?.id} className="">
+                  <img
+                    className={`${
+                      place?.id === activeIndex
+                        ? "border-4 border-orange-400"
+                        : ""
+                    } !w-[160px] h-[230px] object-cover  rounded-lg`}
+                    src={place?.imageURL}
+                    alt=""
+                  />
+                </div>
+              ))}
+            </Slider>
 
-          <div className="flex justify-start places-center gap-6 my-5">
-            <button
-              onClick={() => sliderRef.current.slickPrev()}
-              className="previous "
-            >
-              <p className="orange-btn ">
-                <AiOutlineLeft></AiOutlineLeft>
-              </p>
-            </button>
-            <button
-              onClick={() => sliderRef.current.slickNext()}
-              className="next "
-            >
-              <p className="orange-btn ">
-                <AiOutlineRight></AiOutlineRight>
-              </p>
-            </button>
-          </div>
-        </FadeAnimations>
-      </div>
+            <div className="flex justify-start places-center gap-6 my-5">
+              <button
+                onClick={() => sliderRef.current.slickPrev()}
+                className="previous "
+              >
+                <p className="orange-btn ">
+                  <AiOutlineLeft></AiOutlineLeft>
+                </p>
+              </button>
+              <button
+                onClick={() => sliderRef.current.slickNext()}
+                className="next "
+              >
+                <p className="orange-btn ">
+                  <AiOutlineRight></AiOutlineRight>
+                </p>
+              </button>
+            </div>
+          </FadeAnimations>
+        </div>
+      )}
     </div>
   );
 };

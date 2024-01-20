@@ -12,8 +12,9 @@ const LoginPage = () => {
     navigate("/");
   }
 
-  const from = location.state?.from?.pathname || "/";
-
+  const from = location?.state?.from?.pathname || "/";
+  console.log(location);
+  console.log(from);
   const handleGoogleSignIn = () => {
     if (user) {
       alert("At first logout");

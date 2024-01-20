@@ -9,7 +9,6 @@ import useAuth from "../../Hooks/UseAuth/UseAuth";
 import UseAxiosSecure from "../../Hooks/UseAxiosSecure/UseAxiosSecure";
 import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
-import UseFavourite from "../../Hooks/UseFavourite/UseFavourite";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import ScrollProgressBar from "../../Components/ScrollProgressBar/ScrollProgressBar";
 
