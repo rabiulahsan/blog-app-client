@@ -6,6 +6,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "./Banner.css";
 import FadeAnimations from "../../../Shared/FadeAnimations/FadeAnimations";
 import { Link } from "react-router-dom";
+import SkeletonCard from "../../../Components/SkeletonCard/SkeletonCard";
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,6 +42,7 @@ const Banner = () => {
 
   const [allPlaces, setallPlaces] = useState([]);
   const [findPlace, setfindPlace] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("places.json")
@@ -48,6 +50,7 @@ const Banner = () => {
       .then((data) => {
         setallPlaces(data);
         setActiveIndex(data.length > 0 ? data[0].id : 1);
+        setIsLoading(false);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -60,37 +63,50 @@ const Banner = () => {
   return (
     <div className="relative h-screen">
       <div className="relative h-screen">
+        {/* {isLoading ? (
+          <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-1 px-[10%] my-[5%]">
+            <SkeletonCard number={1}></SkeletonCard>
+          </div>
+        ) : (
+          )} */}
         <img
           className="h-full w-full object-cover"
           src={findPlace[0]?.imageURL}
           alt=""
         />
-        <div className=" absolute  top-0 left-0 flex items-center  bg-gradient-to-r from-[rgba(0,0,0,.9)] to-[rgba(0,0,0,0.1)] h-full  w-full pl-[8%]">
-          <FadeAnimations
-            delay={0.5}
-            direction="right"
-            once={false}
-            duration={0.7}
-          >
-            <p className="text-7xl text-orange-500 font-semibold ">
-              {findPlace[0]?.title}
-            </p>
-            <p className="text-base text-white w-2/5 my-[2%]">
-              {findPlace[0]?.description}
-            </p>
 
-            {/* button with hover effect  */}
-            <button
-              onMouseMove={(e) => handleMouseMove(e)}
-              style={buttonStyles}
-              className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
+        {isLoading ? (
+          <div className="grid gap-x-20 gap-y-16 grid-cols-1 lg:grid-cols-1 px-[10%] my-[5%]">
+            <SkeletonCard number={1}></SkeletonCard>
+          </div>
+        ) : (
+          <div className=" absolute  top-0 left-0 flex items-center  bg-gradient-to-r from-[rgba(0,0,0,.9)] to-[rgba(0,0,0,0.1)] h-full  w-full pl-[8%]">
+            <FadeAnimations
+              delay={0.5}
+              direction="right"
+              once={false}
+              duration={0.7}
             >
-              <Link to="/blogs">
-                <span className="relative z-10">Explorer</span>
-              </Link>
-            </button>
-          </FadeAnimations>
-        </div>
+              <p className="text-7xl text-orange-500 font-semibold ">
+                {findPlace[0]?.title}
+              </p>
+              <p className="text-base text-white w-2/5 my-[2%]">
+                {findPlace[0]?.description}
+              </p>
+
+              {/* button with hover effect  */}
+              <button
+                onMouseMove={(e) => handleMouseMove(e)}
+                style={buttonStyles}
+                className=" button px-6 py-2 font-semibold text-lg rounded text-white inline-flex relative overflow-hidden bg-orange-500 "
+              >
+                <Link to="/blogs">
+                  <span className="relative z-10">Explorer</span>
+                </Link>
+              </button>
+            </FadeAnimations>
+          </div>
+        )}
       </div>
       <div className="absolute top-[52%] right-[5%] px-6  w-auto overflow-hidden">
         <FadeAnimations
