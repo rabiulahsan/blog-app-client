@@ -148,7 +148,7 @@ const Navbar = () => {
                 </>
               ) : (
                 <Link to="/login">
-                  <HoverOverlayButton btnName="Join Us"></HoverOverlayButton>
+                  <HoverOverlayButton btnName="Become a Writer?"></HoverOverlayButton>
                 </Link>
               )}
             </div>
