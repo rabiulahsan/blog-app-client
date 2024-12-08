@@ -1,7 +1,7 @@
-# **Anigen- AI-powered SaaS for generating and enhancing images**
+# **Explorer- Explore Travel Blogs & Find Your Next Destination**
 
-- <a href="https://anigen.netlify.app/" target="_blank">Live Site Link</a>
-- <a href="https://github.com/rabiulahsan/anime-generator-server" target="_blank">API Repository Link</a>
+- <a href="https://explorer-bd.netlify.app/" target="_blank">Live Site Link</a>
+- <a href="https://github.com/rabiulahsan/blog-app-server" target="_blank">API Repository Link</a>
 
 ## **Table of Contents**
 
