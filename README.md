@@ -3,106 +3,135 @@
 - <a href="https://explorer-bd.netlify.app/" target="_blank">Live Site Link</a>
 - <a href="https://github.com/rabiulahsan/blog-app-server" target="_blank">API Repository Link</a>
 
+
 ## **Table of Contents**
 
 1. [Overview](#overview)
 2. [Objectives](#objectives)
 3. [Technology Used](#technology-used)
 4. [Features](#features)
-   - [Tools](#tools)
-   - [Profile](#profile)
-   - [Pricing](#pricing)
-   - [Payment](#payment)
-5. [Contact Information](#contact-information)
+   - [Navbar](#navbar)
+   - [Animations](#animations)
+   - [Search and Favorites](#search-and-favorites)
+   - [Writer's Corner](#writers-corner)
+   - [Authentication](#authentication)
+5. [Blog Page](#blog-page)
+6. [Contact Information](#contact-information)
+
+---
 
 ## **Overview**
 
-**Anigen** is an innovative application that enables users to **generate anime images** using customized prompts, creating an enjoyable and interactive experience for art enthusiasts.
+**Explorer** is a blog application designed for travel enthusiasts. It provides a platform to explore travel blogs, save favorite destinations, and contribute your own posts as a writer. Featuring smooth animations and an engaging interface, **Explorer** offers an enjoyable experience for users searching for their next travel adventure.
 
 ### Key Features:
 
-- **Image Generation**: Generate anime-style artwork based on user-provided prompts.
-- **Image Tools**:
-  - **Image Upscaling**: Enhance image quality for better resolution.
-  - **Reimagining**: Transform existing images into anime-style illustrations.
-  - **Background Removal**: Seamlessly extract the subject from an image.
-  - **Background Replacement**: Replace backgrounds with custom or AI-generated visuals.
-- **Coin-Based System**:  
-  Users purchase coin packages to access features:
-  - **1 Coin = 1 Image Generation**
-  - Affordable, scalable, and user-friendly payment options.
+- **Beautiful Banner**:  
+  A dynamic, interactive banner created with `react-slick` that updates on user clicks.  
 
-This project demonstrates expertise in **full-stack development**, **AI-powered tools integration**, and building a scalable, engaging platform for creative users.
+- **Search Functionality**:  
+  Quickly find tourist destinations by category, country, or keyword.  
+
+- **Advanced Animations**:  
+  Built with `framer-motion` and `react-skeleton-loading` to enhance the UI.  
+
+- **Writer-Friendly**:  
+  Users can join as writers to share their travel experiences and tips.
+
+- **Favorites**:  
+  Save blogs to revisit later.
+
+This project showcases modern web development practices, engaging user interfaces, and seamless user experiences.
+
+---
 
 ## **Objectives**
 
 - **Purpose**:  
-  Anigen is built to empower users with AI-driven tools that enable seamless anime-style image creation and customization, making artistic expression accessible to everyone.
+  Explorer was built to provide travel enthusiasts with a centralized platform to discover, save, and share travel destinations.  
 
-- **Why It’s Good**:
-
-  - Encourages creativity with advanced image tools.
-  - Simplifies the process of creating professional-quality artwork.
-  - Combines innovative AI with a user-friendly interface, ensuring anyone can explore and enjoy their artistic journey.
+- **Why It’s Good**:  
+  - Encourages exploration and adventure by showcasing diverse destinations.  
+  - Provides a user-friendly and visually appealing platform.  
+  - Combines creativity with technical expertise to deliver a seamless experience.  
 
 - **Developer Challenge**:  
-  Building Anigen provided hands-on experience with full-stack technologies, payment system integrations, and the deployment of AI APIs to deliver a highly engaging application.
+  Developing Explorer was an opportunity to integrate animations, advanced UI features, and backend functionalities, creating a well-rounded full-stack project.
+
+---
 
 ## **Technology Used**
 
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Node.js, Firebase, MongoDB
-- **Authentication**: JWT
-- **Payments**: Stripe
-- **AI APIs**: Used for image generation and editing
+- **Frontend**: React, Tailwind CSS, React Router, Framer Motion, React Icons, React Slick  
+- **Backend**: Node.js, Express.js, MongoDB  
+- **Authentication**: Firebase, JWT  
+- **UI Enhancements**: React Skeleton Loading  
+
+
+---
 
 ## **Features**
 
 ### **Navbar**
 
-The navbar offers easy navigation for users:
+The navbar provides easy navigation and adapts based on user login status:
 
-- Access **all generated images** by the user.
-- Browse **all generated images** across the platform.
-- View the remaining **coin balance**.
-- Options to **Log In/Sign Out** for managing access.  
-  <img src="public/navbar.png" alt="Navbar">
+- **Without Login**:  
+  <img src="public/navbar.png" alt="Navbar without Login">  
+  - Browse all available blogs.  
+  - Search for destinations.  
+  - Option to log in or sign up.  
 
-### **Tools**
+- **After Login**:  
+  <img src="public/nav.png" alt="Navbar with Login">  
+  - Access personal and favorite blogs.  
+  - Create and manage posts.   
+  - Option to log out.  
 
-**Anigen** provides the following advanced tools for image enhancement and customization:
+---
 
-1. **Image Upscaling**: Enhance image resolution for better quality.
-2. **Reimagining**: Transform existing images into anime-style artwork.
-3. **Background Removal**: Remove backgrounds seamlessly from any image.
-4. **Background Replacement**: Replace the background with custom or AI-generated visuals.  
-   <img src="public/tools.png" alt="Feature Tools" height="300">
+### **Animations**
 
-### **Profile**
+- Smooth page transitions and animations powered by **framer-motion**.  
+- Skeleton loading for enhanced visual feedback during data fetching:  
+  <img src="public/skeleton.png" alt="Skeleton Animation">  
 
-The profile page displays:
+---
 
-- **Membership Type** (e.g., Basic, Pro, Enterprise).
-- **Other User Information**, such as coin balance and account details.  
-  <img src="public/profile.png" alt="Feature Profile" height="300">  
+### **Search and Favorites**
+
+- Advanced search to find destinations by category or country.  
+- Ability to save blogs as favorites for later reference.  
+
+---
+
+### **Writer's Corner**
+
+- Users can sign up as writers to contribute blogs.  
+- Intuitive editor for creating, editing, and publishing posts:  
+  <img src="public/writing.png" alt="Writing Section">  
+
+---
+
+### **Authentication**
+
+- Secure user authentication using Firebase and JWT.  
+- Role-based access for writers and readers.  
+
+---
+
+## **Blog Page**
+
+The about section of a specific blog provides detailed information about the selected destination or post.  
+ 
+- Displays the full blog content, including images and descriptions.  
+- Allows users to add the blog to their **favorites** for easy access later.  
+- Highlights **trending destinations** at the bottom to keep users engaged and inspire future travel plans.  
+
+<img src="public/page.png" alt="About Section" height="600">
+ 
 
 
-### **Pricing**
-
-Anigen offers three flexible plans to suit various user needs:
-
-1. **Basics**: 250 coins for $25 (Affordable starter plan).
-2. **Pro**: 500 coins for $40 (Enhanced plan for regular users).
-3. **Enterprise**: 1000 coins for $80 (Premium plan for advanced users).  
-   <img src="public/price.png" alt="Feature Pricing" height="300">
-
-### **Payment**
-
-Anigen features seamless **Stripe payment integration** for secure transactions.  
-<img src="public/stripe.png" alt="Stripe Integration" height="300">
-
-Users can also view their complete **payment history** to track all purchases:  
-<img src="public/payment-history.png" alt="Payment History" height="300">
 
 ## **Contact Information**
 
