@@ -22,18 +22,21 @@
 
 ## **Overview**
 
+
 **Explorer** is a blog application designed for travel enthusiasts. It provides a platform to explore travel blogs, save favorite destinations, and contribute your own posts as a writer. Featuring smooth animations and an engaging interface, **Explorer** offers an enjoyable experience for users searching for their next travel adventure.
+
+<img src="public/overview.png" alt="Explorer Home Page" height ="600">
 
 ### Key Features:
 
 - **Beautiful Banner**:  
-  A dynamic, interactive banner created with `react-slick` that updates on user clicks.  
+  A dynamic, interactive banner created with **react-slick** that updates on user clicks.  
 
 - **Search Functionality**:  
   Quickly find tourist destinations by category, country, or keyword.  
 
 - **Advanced Animations**:  
-  Built with `framer-motion` and `react-skeleton-loading` to enhance the UI.  
+  Built with **framer-motion** and **react-skeleton-loading** to enhance the UI.  
 
 - **Writer-Friendly**:  
   Users can join as writers to share their travel experiences and tips.
